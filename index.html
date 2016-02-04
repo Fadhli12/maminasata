@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Halte Bus Maminasata</title>
+	<base href="http://localhost/project/maminasata/">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/materialize/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/materialize/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<!-- header -->
+	<div class="navbar-fixed">
+		<div class="row">
+			<nav>
+				<div class="nav-wrapper cyan darken-2">
+					<a href="#" class="brand-logo center">Halte Bus Maminasata</a>
+					<ul id="nav-mobile" class="right">
+						<div class="col s12 m12 l12">
+							<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="modal1">Daftar Bus</button>
+						</div>
+					</ul>
+					<ul id="nav-mobile" class="left">
+						<div class="col s12 m12 l12"> 
+							<!-- Dropdown Trigger -->
+								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> <span class="zmdi zmdi-bus"></span> Koridor 1</a>
+							<!-- Dropdown Structure -->
+							  <ul id='dropdown1' class='dropdown-content'>
+								<li><a href="#!">Koridor 1</a></li>
+								<li><a href="#!">Koridor 2</a></li>
+								<li><a href="#!">Koridor 3</a></li>
+							  </ul>
+						</div>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	 </div>
+	<!-- end header -->
+	<!-- main container -->
+	<div ui-view></div>
+	<!-- end main container -->
+	
+	<!-- footer -->
+	<footer class="page-footer cyan darken-2">
+		<div class="footer-copyright">
+			<div class="container center">
+			© 2016 Copyright
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!--jquery-->
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<!--google map-->
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+	<!-- materialize script -->
+	<script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+	<!--angular-->
+	<script type="text/javascript" src="lib/angularjs/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angularjs/angular-animate.min.js"></script>
+	<script type="text/javascript" src="lib/angularjs/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/ui-router/angular-ui-router.min.js"></script>
+	<!--angular modul-->
+	<script type="text/javascript" src="public/js/app.mdl.js"></script>
+	<!--angular ctrl-->
+	<script type="text/javascript" src="public/map/map.ctrl.js"></script>
+
+</body>
+</html>

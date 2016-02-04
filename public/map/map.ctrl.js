@@ -108,5 +108,4 @@ myApp.controller('mapCtrl',function($scope,$http){
     var bus = {latitude:-5.138828,longitude:119.420517};
     createMarkerBus(bus)
 
-    ,119.4183705
 });

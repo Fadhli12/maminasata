@@ -106,6 +106,12 @@ myApp.controller('mapCtrl',function($scope,$http){
     };
 
     var bus = {latitude:-5.138828,longitude:119.420517};
-    createMarkerBus(bus)
+    createMarkerBus(bus);
 
+    $http.jsonp('https://maps.googleapis.com/maps/api/distancematrix/json?origins=-5.1582229,119.422984&destinations=-5.1408939,119.4237934&mode=driving&language=en&prefix=JSON_CALLBACK')
+        .then(function(data){
+
+        },function(){
+            console.log('error');
+        })
 });

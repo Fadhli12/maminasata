@@ -1,48 +1,38 @@
 /**
  * Created by Genesis on 03/02/2016.
  */
-myApp.controller('mapCtrl',function($scope,$http,$interval){
-    $scope.koridor = [];
-    $http.get('public/map/model/getKoridor.php')
-        .then(function(res){
-            $scope.koridor = res.data
-        },function(){
-            console.log('error')
-        });
+myApp.controller('mapCtrl',function($scope,$http,$interval,$stateParams){
+    //map api
+    var myOptions = {
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    // init directions service
+    var dirService = new google.maps.DirectionsService();
+    var dirRenderer = new google.maps.DirectionsRenderer({suppressMarkers: true});
+    dirRenderer.setMap(map);
+    var infoWindow = new google.maps.InfoWindow();
 
-    //modal init
-    $(document).ready(function(){
-        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        $('.modal-trigger').leanModal();
-    });
-    $('#modal1').openModal();
-    $('#modal1').closeModal();
-
-
-
-    $scope.getRute = function(k){
-        $http.post('public/map/model/getRute.php',{koridor : k})
+    if ($stateParams.id_koridor){
+        var koridor = $stateParams.id_koridor;
+    } else {
+        var koridor = 1;
+    }
+    var halteMarkers = [];
+    var busMarkers = [];
+    $scope.getRute = function(id_koridor){
+        $http.post('public/map/model/getRute.php',{koridor : id_koridor})
             .then(function(res){
                 getMap(res.data);
+                setHalte(res.data.halte)
             },function(){
                 console.log('error');
             });
     };
-    $scope.getRute('1');
-    //$interval(getRute, 5000);
+    $scope.getRute(koridor);
 
-    function getMap(rute){
-        var myOptions = {
-            zoom: 15,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-        // init directions service
-        var dirService = new google.maps.DirectionsService();
-        var dirRenderer = new google.maps.DirectionsRenderer({suppressMarkers: true});
-        dirRenderer.setMap(map);
-
+    function getMap(rute) {
         //google map
         var request = {
             origin: rute.direction[0].location,
@@ -50,51 +40,20 @@ myApp.controller('mapCtrl',function($scope,$http,$interval){
             waypoints: rute.direction,
             travelMode: google.maps.TravelMode.DRIVING
         };
-        dirService.route(request, function(result, status) {
+        dirService.route(request, function (result, status) {
             if (status == google.maps.DirectionsStatus.OK) {
                 dirRenderer.setDirections(result);
             }
         });
-        /*var halte = [
-            {latitude:'-5.1666716',longitude:'119.4477935'},
-            {latitude:'-5.1567238',longitude:'119.4464341'},
-            {latitude:'-5.1415601',longitude:'119.4485844'}
-        ]*/
+    }
 
-        var halte = rute.halte;
-
-        var infoWindow = new google.maps.InfoWindow();
-        var createMarker = function (halte) {
-            var marker = new google.maps.Marker({
-                map: map,
-                position: new google.maps.LatLng(halte.latitude, halte.longitude),
-                title: halte.nama
-            });
-            marker.content = '' +
-                '<div class="infoWindowContent">' +
-                '   <h4>' + marker.title + '</h4>  ' +
-                '   <p><i class="fa fa-map-marker"></i> Lokasi :' + halte.latitude +','+ halte.longitude+'</p>' +
-                '</div>';
-            google.maps.event.addListener(marker, 'click', function () {
-                /*open map default content*/
-                infoWindow.setContent(marker.content);
-                infoWindow.open(map, marker);
-            });
-
-        };
-
-        //inisiasi marker
+    function setHalte(halte){
         for (i = 0; i < halte.length; i++){
-            createMarker(halte[i]);
-        }
-        var iconBase = 'assets/img/icon/';
-        var createMarkerBus = function (bus) {
-
             var marker = new google.maps.Marker({
                 map: map,
-                position: new google.maps.LatLng(bus.latitude, bus.longitude),
-                icon : iconBase+'icon-bus.png',
-                title: 'Maminasata 1'
+                position: new google.maps.LatLng(halte[i].latitude, halte[i].longitude),
+                title: halte[i].nama,
+                animation: google.maps.Animation.DROP
             });
             marker.content = '' +
                 '<div class="infoWindowContent">' +
@@ -108,9 +67,43 @@ myApp.controller('mapCtrl',function($scope,$http,$interval){
                 infoWindow.setContent(marker.content);
                 infoWindow.open(map, marker);
             });
-        };
 
-        var bus = {latitude:-5.138828,longitude:119.420517};
-        createMarkerBus(bus);
+            halteMarkers.push(marker);
+        }
     }
+
+    function setBus(){
+        var bus = {latitude:-5.138828,longitude:119.420517};
+        var iconBase = 'assets/img/icon/';
+        var marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(bus.latitude, bus.longitude),
+            title: 'Bus',
+            icon : iconBase+'icon-bus.png'
+        });
+
+        busMarkers.push(marker);
+        for (m = 1; m <= busMarkers.length; m++){
+            if (m < busMarkers.length){
+                busMarkers[m-1].setMap(null);
+            }
+            if (m == busMarkers.length){
+                busMarkers[m-1].setMap(map);
+            }
+        }
+    }
+
+    for (x = 0 ; x < busMarkers.length; x++){
+        halteMarkers[x].setMap(map);
+    }
+    $interval(setBus, 5000);
+
+
+    //modal init
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+    $('#modal1').openModal();
+    $('#modal1').closeModal();
 });

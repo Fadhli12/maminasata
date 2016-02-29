@@ -20,13 +20,11 @@ $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
 error_reporting(0);
-$sql_query = "SELECT * FROM halte LIMIT 8";
+$sql_query = "SELECT DISTINCT k.* FROM koridor AS k, halte As h WHERE k.id_koridor = h.id_koridor";
 $result = $mysqli->query($sql_query);
 if (mysqli_num_rows($result)>0){
 	while ($row = mysqli_fetch_array($result)){
-		$rute['location'] = $row['latitude'].", ".$row['longitude'];
-		$data['direction'][] = $rute;
-		$data['halte'][] = $row;
+		$data[] = $row;
 	}
 	echo ")]}',\n";
 	echo json_encode($data);

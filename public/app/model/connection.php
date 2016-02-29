@@ -2,15 +2,15 @@
 /*
 * Mysql database class - only one connection alowed
 */
-error_reporting(0);
+error_reporting(1);
 date_timezone_set("Asia/Singapore");
 class Database {
 	private $_connection;
 	private static $_instance; //The single instance
-	private $_host = "192.168.23.23";
-	private $_username = "daeng_sampah";
-	private $_password = "daeng_sampah";
-	private $_database = "daengsampah";
+	private $_host = "localhost";
+	private $_username = "root";
+	private $_password = "";
+	private $_database = "maminasata";
 	private $error = 0;
 	/*
 	Get an instance of the Database

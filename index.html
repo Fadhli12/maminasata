@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="myApp" ng-controller="globalCtrl">
 <head>
     <meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -20,18 +20,18 @@
 					<a href="#" class="brand-logo center">Halte Bus Maminasata</a>
 					<ul id="nav-mobile" class="right">
 						<div class="col s12 m12 l12">
-							<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="modal1">Daftarkan Bus</button>
+							<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="bus-modal">Daftarkan Bus</button>
 						</div>
+
 					</ul>
 					<ul id="nav-mobile" class="left">
 						<div class="col s12 m12 l12 hide-on-small-and-down">
 							<!-- Dropdown Trigger -->
-								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> <span class="zmdi zmdi-bus"></span> Koridor 1</a>
+								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> <span class="zmdi zmdi-bus"></span> Pilih Koridor</a>
 							<!-- Dropdown Structure -->
 							  <ul id='dropdown1' class='dropdown-content'>
-								<li><a href="#!">Koridor 1</a></li>
-								<li><a href="#!">Koridor 2</a></li>
-								<li><a href="#!">Koridor 3</a></li>
+								<li ng-repeat="data in koridor"><a ng-href="map/{{data.id_koridor}}" ng-click="getRute(data.id_koridor)">{{data.nama_koridor}}</a></li>
+								<li><a href="koridor">+ Koridor</a></li>
 							  </ul>
 						</div>
 					</ul>
@@ -43,7 +43,82 @@
 	<!-- main container -->
 	<div ui-view></div>
 	<!-- end main container -->
-	
+	<!-- Modal Structure -->
+	<div id="bus-modal" class="modal">
+		<div class="modal-content">
+			<h4>Pendaftaran Bus</h4>
+			<div class="row">
+				<form class="login-form">
+					<div class="row-margin">
+						<div class="input-field col s12 m12 l12">
+							<i class="zmdi zmdi-bus prefix"></i>
+							<input type="text">
+							<label class="center-align">Nama Bus</label>
+						</div>
+						<div class="input-field col s12 m12 l12">
+							<i class="zmdi zmdi-pin-account prefix"></i>
+							<input type="text">
+							<label class="center-align">Plat Kendaraan</label>
+						</div>
+						<div class="input-field col s12 m12 l12">
+							<i class="zmdi zmdi-map prefix"></i>
+							<input type="text">
+							<label class="center-align">Pilih Koridor</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn waves-effect waves-light" type="submit" name="action" onclick="Materialize.toast('Pendaftaran Berhasil! Silahkan tunggu konfirmasi selanjutnya', 5000)">Kirim
+				<i class="material-icons right">send</i>
+			</button>&nbsp;
+			<a href="#!" class=" modal-action modal-close waves-effect waves-gray waves-light btn-flat">Batal</a>
+		</div>
+	</div>
+	<div id="koridor-modal" class="modal">
+		<div class="modal-content">
+			<h4>Tambah Koridor</h4>
+			<div class="row">
+				<form class="login-form">
+					<div class="col l4">
+						<div class="row-margin">
+							<div class="input-field col s12 m12 l12">
+								<i class="zmdi zmdi-map prefix"></i>
+								<input type="text">
+								<label class="center-align">Nama Koridor</label>
+							</div>
+							<div class="input-field col s12 m12 l12">
+								<i class="zmdi zmdi-pin prefix"></i>
+								<input type="text">
+								<label class="center-align">Lokasi</label>
+							</div>
+							<div class="input-field col s12 m12 l12">
+								<select>
+									<option disabled selected> Pilih Status Lokasi</option>
+									<option value="awal" > Awal</option>
+									<option value="tengah" > Tengah</option>
+									<option value="akhir" > Akhir</option>
+								</select>
+								<label class="center-align">Status</label>
+							</div>
+						</div>
+					</div>
+					<div class="col l8">
+						<div class="row-margin">
+
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn waves-effect waves-light" type="submit" name="action" onclick="Materialize.toast('Pendaftaran Berhasil! Silahkan tunggu konfirmasi selanjutnya', 5000)">Kirim
+				<i class="material-icons right">send</i>
+			</button>&nbsp;
+			<a href="#!" class=" modal-action modal-close waves-effect waves-gray waves-light btn-flat">Batal</a>
+		</div>
+	</div>
 	<!-- footer -->
 	<footer class="page-footer cyan darken-2">
 		<div class="footer-copyright">
@@ -55,7 +130,7 @@
 	<!-- end footer -->
 	<!--jquery-->
 	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-	<!--google map-->
+	<!--google app-->
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
 	<!-- materialize script -->
 	<script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
@@ -67,7 +142,9 @@
 	<!--angular modul-->
 	<script type="text/javascript" src="public/js/app.mdl.js"></script>
 	<!--angular ctrl-->
-	<script type="text/javascript" src="public/map/map.ctrl.js"></script>
+	<script type="text/javascript" src="public/js/global.ctrl.js"></script>
+	<script type="text/javascript" src="public/app/map.ctrl.js"></script>
+	<script type="text/javascript" src="public/app/koridor.ctrl.js"></script>
 
 </body>
 </html>

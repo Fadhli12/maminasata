@@ -1,28 +1,31 @@
 <div>
     <div class="card-panel teal lighten-5" style="margin-top: 0">
-        <form class="container">
+        <form class="container" name="form-koridor" ng-submit="tambahKoridor()">
             <div class="row" style="margin-bottom: 0">
-                <div class="col s12 m3 l3">
-                    <div class="col s12">
-                        <label for="koridor">Nama Koridor</label>
-                        <input id="koridor" type="text" class="validate" placeholder="Koridor 1">
+                <div class="col s12 m2 l2">
+                    <div class="row">
+                        <div class="col s12">
+                            <label for="koridor">Nama Koridor</label>
+                            <input id="koridor" type="text" class="validate" ng-model="nama_koridor" placeholder="Koridor 1" required>
+                        </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l6">
+                <div class="col s12 m5 l5">
                     <div class="row">
-                        <div class="col s8">
-                            <label for="lokasi">Lokasi</label>
+                        <div class="col s9">
+                            <label for="lokasi">Rute</label>
                             <input disabled value="Pilih lokasi klik map!" id="lokasi" type="text" class="validate">
                         </div>
-                        <div class="col s4" style="padding-top: 30px">
-                            <a href="#map-modal" class="btn grey darken-1 waves-effect waves-light modal-trigger"><span class="fa fa-map-marker"></span> Map</a>
+                        <div class="col s3" style="padding-top: 30px">
+                            <a data-target="map-modal" id="map-btn" class="btn grey darken-1 waves-effect waves-light modal-trigger"><span class="fa fa-map-marker"></span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m3 l3 right">
+                <div class="col s12 m3 l3">
                     <div class="row">
                         <div class="col s12">
                             <div class="switch">
+                                <p>Status Koridor</p>
                                 <label>
                                     <span id="tidakaktif">Tidak Aktif</span>
                                     <input type="checkbox">
@@ -31,10 +34,52 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="col s12" style="padding-top: 20px">
-                            <div class="col btn waves-effect waves-light">Tambah Koridor</div>
+                    </div>
+                </div>
+                <div class="col s12 m2 l2" style="padding-top: 15px">
+                    <div class="row">
+                        <button type="submit" class="col s12 btn-large waves-effect waves-light"><span class="fa fa-plus"></span> Koridor</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <span ng-repeat="rute in rute track by $index"><i ng-hide="$first">-</i>{{rute.lokasi}}<a class="red-text" ng-click="hapusRute($index)" title="hapus"><i class="fa fa-times"></i></a></span>
+                </div>
+            </div>
+            <div id="map-modal" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col s12">
+                            <span ng-repeat="rute in rute track by $index"><i ng-hide="$first">-</i>{{rute.lokasi}}<a class="red-text" ng-click="hapusRute($index)" title="hapus"><i class="fa fa-times"></i></a></span>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col s8">
+                            <div id="map-picker" style="width: 400px; height: 400px;"></div>
+                        </div>
+                        <div class="col s4">
+                            <div class="col s12">
+                                <label for="lokasi-kordinat">Lokasi</label>
+                                <input id="lokasi-kordinat" type="text" class="validate" placeholder="Lokasi">
+                            </div>
+                            <div class="col s12">
+                                <label for="latitude">Latitude</label>
+                                <input id="latitude" type="text" class="validate" placeholder="Latitude">
+                            </div>
+                            <div class="col s12">
+                                <label for="longitude">Longitude</label>
+                                <input id="longitude" type="text" class="validate" placeholder="Longitude">
+                            </div>
+                            <div class="col s12">
+                                <a class="btn grey darken-1 waves-effect waves-light" ng-click="tambahRute()"><i class="fa fa-plus"></i> Tambah Rute</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-action modal-close btn red waves-effect waves-light">OK</a>
+                    <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
                 </div>
             </div>
         </form>
@@ -46,57 +91,24 @@
                 <table class="centered highlight">
                     <thead>
                     <tr>
-                        <th data-field="id">NO.</th>
-                        <th data-field="name">KORIDOR</th>
-                        <th data-field="price">LOKASI</th>
-                        <th data-field="price">AKSI</th>
+                        <th data-field="no">NO.</th>
+                        <th data-field="nama">KORIDOR</th>
+                        <th data-field="lokasi">RUTE</th>
+                        <th data-field="lokasi">HALTE</th>
+                        <th data-field="aksi">AKSI</th>
                     </tr>
                     </thead>
 
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Koridor 1</td>
-                        <td>$0.87</td>
+                    <tr ng-repeat="data in koridor">
+                        <td>{{$index+1}}</td>
+                        <td>{{data.nama_koridor}}</td>
+                        <td><span  ng-repeat="rute in data.rute track by $index"><i ng-show="$middle"> - </i>{{rute}}</span></td>
+                        <td><span  ng-repeat="halte in data.halte track by $index"><i ng-show="$middle"> - </i>{{halte}}</span></td>
                         <td>
-                            <div class="row">
-                                <div class="col push-m3 push-l3 s12 m3 l3">
-                                    <a href="#edit-modal" class="modal-trigger col s12 btn red waves-effect waves-light">EDIT</a>
-                                </div>
-                                <div class="col push-m3 push-l3 s12 m3 l3">
-                                    <a class="col s12 btn grey darken-1 waves-effect waves-light">HAPUS</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Koridor 1</td>
-                        <td>$3.76</td>
-                        <td>
-                            <div class="row">
-                                <div class="col push-m3 push-l3 s12 m3 l3">
-                                    <a href="#edit-modal" class="modal-trigger col s12 btn red waves-effect waves-light">EDIT</a>
-                                </div>
-                                <div class="col push-m3 push-l3 s12 m3 l3">
-                                    <a class="col s12 btn grey darken-1 waves-effect waves-light">HAPUS</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Koridor 1</td>
-                        <td>$3.76</td>
-                        <td>
-                            <div class="row">
-                                <div class="col push-m3 push-l3 s12 m3 l3">
-                                    <a href="#edit-modal" class="modal-trigger col s12 btn red waves-effect waves-light">EDIT</a>
-                                </div>
-                                <div class="col push-m3 push-l3 s12 m3 l3">
-                                    <a class="col s12 btn grey darken-1 waves-effect waves-light">HAPUS</a>
-                                </div>
-                            </div>
+                            <a ng-click="openModal('edit-modal')" class="modal-trigger col s12 btn red waves-effect waves-light">EDIT</a><br><br>
+                            <a ng-click="openHalte(data.id_koridor)" class="map-btn-halte modal-trigger col s12 btn red waves-effect waves-light">Halte</a><br><br>
+                            <a ng-click="hapusKoridor(data.id_koridor, data.nama_koridor)" class="col s12 btn grey darken-1 waves-effect waves-light">HAPUS</a>
                         </td>
                     </tr>
                     </tbody>
@@ -105,35 +117,7 @@
     </div>
 
     <!--MODAL STRUCTURE-->
-    <div id="map-modal" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <div class="row">
-                <div class="col s8">
-                    <!--PUT MAP HERE NAH-->
-                </div>
-                <div class="col s4">
-                    <div class="row"><h5>Lokasi Terpilih</h5></div>
-                    <div class="row">
-                        <label>Lokasi 1</label>
-                        <p>Jl.Sultan Alauddin</p>
-                    </div>
-                    <div class="row">
-                        <label>Lokasi 2</label>
-                        <p>Jl.Sultan Alauddin</p>
-                    </div>
-                    <div class="row">
-                        <label>Lokasi 3</label>
-                        <p>Jl.Sultan Alauddin</p>
-                    </div>
-                    <div class="row"><a class="btn grey darken-1 waves-effect waves-light"><span class="fa fa-plus"></span> Lokasi</a> </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a class="modal-action modal-close btn red waves-effect waves-light">OK</a>
-            <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
-        </div>
-    </div>
+
     <div id="edit-modal" class="modal">
         <div class="modal-content">
             <h5>Edit Koridor</h5>
@@ -181,4 +165,41 @@
             <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
         </div>
     </div>
+    <div id="halte-modal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <span ng-repeat="halte in halte track by $index"><i ng-hide="$first">-</i>{{halte.lokasi}}<a class="red-text" ng-click="hapusHalte($index)" title="hapus"><i class="fa fa-times"></i></a></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s8">
+                    <div id="map-picker-halte" style="width: 400px; height: 400px;"></div>
+                </div>
+                <div class="col s4">
+                    <div class="col s12">
+                        <label for="lokasi-kordinat">Lokasi</label>
+                        <input id="lokasi-kordinat-halte" type="text" class="validate" placeholder="Lokasi">
+                    </div>
+                    <div class="col s12">
+                        <label for="latitude">Latitude</label>
+                        <input id="latitude-halte" type="text" class="validate" placeholder="Latitude">
+                    </div>
+                    <div class="col s12">
+                        <label for="longitude">Longitude</label>
+                        <input id="longitude-halte" type="text" class="validate" placeholder="Longitude">
+                    </div>
+                    <div class="col s12">
+                        <a class="btn grey darken-1 waves-effect waves-light" ng-click="tambahHalte()"><i class="fa fa-plus"></i> Halte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a ng-click="postHalte()" class="modal-action modal-close btn red waves-effect waves-light">SIMPAN</a>
+            <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+        </div>
+    </div>
 </div>
+<!--jquery script-->
+<script type="text/javascript" src="public/js/app.js"></script>

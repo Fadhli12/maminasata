@@ -1,22 +1,27 @@
-/**
- * Created by virah on 17-Nov-15.
- */
+    $('.modal-trigger').leanModal();
+    $('select').material_select();
 
-var myApp = angular.module('myApp',['ui.router','ngAnimate','ngRoute']);
+    $('#map-picker').locationpicker({
+        location: {latitude: -5.149417530110843, longitude: 119.43779541062008},
+        radius: 0,
+        inputBinding: {
+            latitudeInput: $('#latitude'),
+            longitudeInput: $('#longitude'),
+            locationNameInput: $('#lokasi-kordinat')
+        },
+        enableAutocomplete: true
+    });
+    $('#map-btn').on('click', function () {
+        $('#map-picker').locationpicker('autosize');
+    });
 
-myApp.config(function($stateProvider,$urlRouterProvider,$locationProvider,$routeProvider){
-   $stateProvider
-       .state('map',{
-           url:'/map/:id_koridor',
-           templateUrl:'public/app/view/map.html',
-           controller:'mapCtrl'
-       })
-       .state('koridor',{
-           url:'/koridor',
-           templateUrl:'public/app/view/koridor.html',
-           controller:'koridorCtrl'
-       });
-    $urlRouterProvider.otherwise('map/3');
-    //$locationProvider.html5Mode(true);
-
-})
+    $('#map-picker-halte').locationpicker({
+        location: {latitude: -5.149417530110843, longitude: 119.43779541062008},
+        radius: 0,
+        inputBinding: {
+            latitudeInput: $('#latitude-halte'),
+            longitudeInput: $('#longitude-halte'),
+            locationNameInput: $('#lokasi-kordinat-halte')
+        },
+        enableAutocomplete: true
+    });

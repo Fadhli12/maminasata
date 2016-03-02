@@ -4,7 +4,7 @@
 
 var myApp = angular.module('myApp',['ui.router','ngAnimate','ngRoute']);
 
-myApp.config(function($stateProvider,$urlRouterProvider,$locationProvider){
+myApp.config(function($stateProvider,$urlRouterProvider,$locationProvider,$routeProvider){
    $stateProvider
        .state('map',{
            url:'/map/:id_koridor',
@@ -16,6 +16,7 @@ myApp.config(function($stateProvider,$urlRouterProvider,$locationProvider){
            templateUrl:'public/app/view/koridor.html',
            controller:'koridorCtrl'
        });
-    $urlRouterProvider.otherwise('/map/3');
-    $locationProvider.html5Mode({enabled:true,requireBase:true});
+    $urlRouterProvider.otherwise('map/3');
+    //$locationProvider.html5Mode(true);
+
 })

@@ -3,23 +3,21 @@
  */
 myApp.controller('globalCtrl',function($scope,$http){
     $scope.koridor = [];
+    $scope.bus = {};
     $http.get('public/app/model/getKoridor.php')
         .then(function(res){
             $scope.koridor = res.data
         },function(){
             console.log('error')
         });
-    //materalizecss jquery script
-    $(document).ready(function(){
-        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        $('.modal-trigger').leanModal();
-        $('select').material_select();
-    });
-
-    $('#bus-modal').openModal();
-    $('#bus-modal').closeModal();
-
-    $('#koridor-modal').openModal();
-    $('#koridor-modal').closeModal();
-
+    $scope.postBus = function(){
+        $http.post('public/app/model/postBus.php', $scope.bus)
+            .then(function(){
+                Materialize.toast('Pendaftaran Berhasil! Silahkan tunggu konfirmasi selanjutnya', 5000);
+                $scope.bus = {};
+                $('#bus-modal').closeModal();
+            },function(res){
+                console.log(res);
+            })
+    };
 });

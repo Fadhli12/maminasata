@@ -92,6 +92,7 @@ myApp.controller('mapCtrl',function($scope,$http,$interval,$stateParams){
     }
     $interval(setBus, 5000);
 
+    //materalizecss jquery script
 
 
 });

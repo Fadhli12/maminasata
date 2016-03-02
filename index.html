@@ -19,12 +19,13 @@
 				<div class="nav-wrapper cyan darken-2">
 					<a href="#/" class="brand-logo center hide-on-small-and-down">Halte Bus Maminasata</a>
 					<a href="#/" class="hide-on-med-and-up" style="padding-left: 15px">Halte Bus Maminasata</a>
-					<ul id="nav-mobile" class="right">
+					<ul class="right">
 						<div class="col hide-on-small-and-down m12 l12">
-							<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="bus-modal">Daftarkan Bus</button>
+							<!--<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="bus-modal">Daftarkan Bus</button>-->
+							<button class="waves-effect waves-light btn red accent-2" data-target="login"><span class="fa fa-sign-in">Admin</span></button>
 						</div>
 						<div class="col s12 hide-on-med-and-up">
-							<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="bus-modal"><span class="fa fa-bus"></span></button>
+							<button class="waves-effect waves-light btn red accent-2 modal-trigger" data-target="bus-modal"><span class="zmdi zmdi-google-maps"></span></button>
 						</div>
 					</ul>
 					<ul id="nav-mobile" class="left">
@@ -33,8 +34,9 @@
 								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> <span class="zmdi zmdi-google-maps"></span> Pilih Koridor</a>
 							<!-- Dropdown Structure -->
 							  <ul id='dropdown1' class='dropdown-content'>
-								<li ng-repeat="data in koridor"><a ng-href="#/map/{{data.id_koridor}}" ng-click="getRute(data.id_koridor)">{{data.nama_koridor}}</a></li>
-								<li><a data-target="autentikasi-modal" class="modal-trigger">+ Koridor</a></li>
+								  <li><a data-target="autentikasi-modal" class="modal-trigger">+ Koridor</a></li>
+								  <li class="divider"></li>
+								  <li ng-repeat="data in koridor"><a ng-href="#/map/{{data.id_koridor}}" ng-click="getRute(data.id_koridor)">{{data.nama_koridor}}</a></li>
 							  </ul>
 						</div>
 					</ul>

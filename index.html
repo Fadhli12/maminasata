@@ -21,13 +21,13 @@
 					<a href="#/" class="hide-on-med-and-up" style="padding-left: 15px">Halte Bus Maminasata</a>
 					<ul class="right">
 						<div class="col s12">
-							<button class="waves-effect waves-light btn red accent-2" modal href="#bus-modal"><b> + </b><span class="zmdi zmdi-bus"></span></button>
+							<button class="waves-effect waves-light btn red accent-2" modal href="#bus-modal">Tambah Bus</button>
 						</div>
 					</ul>
 					<ul id="nav-mobile" class="left">
 						<div class="col s12 m12 l12 hide-on-small-and-down">
 							<!-- Dropdown Trigger -->
-								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> <span class="zmdi zmdi-google-maps"></span> Pilih Koridor</a>
+								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> Pilih Koridor</a>
 							<!-- Dropdown Structure -->
 							  <ul id='dropdown1' class='dropdown-content'>
 								  <li><a href="#/koridor" modal>+ Koridor</a></li>
@@ -48,35 +48,40 @@
 	<div id="bus-modal" class="modal">
 		<form class="login-form" name="busForm" ng-submit="postBus()">
 		<div class="modal-content">
-			<h5>Pendaftaran Bus</h5>
 			<div class="row">
-				<div class="row-margin">
-					<div class="input-field col s12 m12 l12">
-						<i class="zmdi zmdi-account prefix"></i>
-						<input name="usrname" type="text" ng-model="bus.username" required>
-						<label class="center-align">Username</label>
-					</div>
-					<div class="input-field col s12 m12 l12">
-						<i class="zmdi zmdi-key prefix"></i>
-						<input name="password" type="text" ng-model="bus.password" required>
-						<label class="center-align">Password</label>
-					</div>
-					<div class="input-field col s12 m12 l12">
-						<i class="zmdi zmdi-bus prefix"></i>
-						<input name="nama" type="text" ng-model="bus.nama" required>
-						<label class="center-align">Nama Bus</label>
-					</div>
-					<div class="input-field col s12 m12 l12">
-						<i class="zmdi zmdi-pin-account prefix"></i>
-						<input name="plat"  type="text" ng-model="bus.plat" required>
-						<label class="center-align">Plat Kendaraan</label>
-					</div>
-					<div class="input-field col s12 m12 l12">
-						<select  name="id_koridor" class="browser-default"  ng-model="bus.id_koridor" required>
-							<option value=""  disabled  selected> Pilih Koridor</option>
-							<option ng-repeat="data in koridor" ng-value="data.id_koridor">{{data.nama_koridor}}</option>
-						</select>
-					</div>
+				<h5>Pendaftaran Bus</h5>
+				<div class="input-field col s12 m12 l12">
+					<select  name="id_koridor" ng-model="bus.id_koridor" watch material-select required>
+						<option value=""  disabled  selected> Pilih Koridor</option>
+						<option ng-repeat="data in koridor" ng-value="data.id_koridor">{{data.nama_koridor}}</option>
+					</select>
+				</div>
+				<div class="input-field col s12 m12 l12">
+					<i class="zmdi zmdi-bus prefix"></i>
+					<input name="nama" type="text" ng-model="bus.nama" required>
+					<label class="center-align">Nama Bus</label>
+				</div>
+				<div class="input-field col s12 m12 l12">
+					<i class="zmdi zmdi-pin-account prefix"></i>
+					<input name="plat"  type="text" ng-model="bus.plat" required>
+					<label class="center-align">Plat Kendaraan</label>
+				</div>
+			</div>
+			<div class="divider"></div>
+			<div class="row">
+				<h5>Autentikasi Supir Bus</h5>
+				<label>Perhatian! Akun ini digunakan oleh supir bus untuk login di aplikasi maminasata agar bisa mengakses lokasi bus yang didaftarkan.
+					<br>(1 akun supir hanya diperbolehkan mengakses 1 bus terdaftar)</label>
+				<br>
+				<div class="input-field col s12 m6 l6">
+					<i class="zmdi zmdi-account prefix"></i>
+					<input name="usrname" type="text" ng-model="bus.username" required>
+					<label class="center-align">Nama Supir</label>
+				</div>
+				<div class="input-field col s12 m6 l6">
+					<i class="zmdi zmdi-key prefix"></i>
+					<input name="password" type="text" ng-model="bus.password" required>
+					<label class="center-align">Kata Sandi Supir</label>
 				</div>
 			</div>
 		</div>
@@ -89,13 +94,13 @@
 		</form>
 	</div>
 	<!-- footer -->
-	<footer class="page-footer cyan darken-2">
-		<div class="footer-copyright">
-			<div class="container center">
-			© 2016 Copyright
-			</div>
-		</div>
-	</footer>
+	<!--<footer class="page-footer cyan darken-2">-->
+		<!--<div class="footer-copyright">-->
+			<!--<div class="container center">-->
+			<!--© 2016 Copyright-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</footer>-->
 	<!-- end footer -->
 	<!--jquery-->
 	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>

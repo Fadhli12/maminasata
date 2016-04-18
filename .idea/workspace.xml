@@ -1,28 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74b47f84-9b86-4787-878e-86e63c920df2" name="Default" comment="commit vcs.xml, workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web.config" afterPath="" />
+    <list default="true" id="74b47f84-9b86-4787-878e-86e63c920df2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/material-design-icons/Material-Design-Icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/material-design-icons/Material-Design-Icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/material-design-icons/Material-Design-Icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/material-design-icons/Material-Design-Icons.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Light.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Medium.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Thin.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Thin.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Thin.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/roboto/Roboto-Thin.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Bold.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Bold.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Bold.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Light.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Light.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Medium.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Medium.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Medium.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Thin.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Thin.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Thin.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/fonts/roboto/Roboto-Thin.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/angular-materializecss/angular-materialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/css/materialize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/material-design-icons/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/font/material-design-icons/Material-Design-Icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/materialize/js/materialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/halteEdit.ctrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/koridorEdit.ctrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getHalte.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getHalteEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getKoridorOnly.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getLocationHalte.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getPerjalananBus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/hapusHalte.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/hapusRute.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/postHalteEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/postKoridorEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/postTambahHalte.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/postTambahRute.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidBusLogin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidBusLogout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/view/halte.edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/view/koridor.edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/materialize/css/materialize.min.css" afterPath="$PROJECT_DIR$/lib/materialize/css/materialize.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/materialize/js/materialize.min.js" afterPath="$PROJECT_DIR$/lib/materialize/js/materialize.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/koridor.ctrl.js" afterPath="$PROJECT_DIR$/public/app/koridor.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/map.ctrl.js" afterPath="$PROJECT_DIR$/public/app/map.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/connection.php" afterPath="$PROJECT_DIR$/public/app/model/connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/hapusKoridor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postBus.php" afterPath="$PROJECT_DIR$/public/app/model/postBus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postHalte.php" afterPath="$PROJECT_DIR$/public/app/model/postHalte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/postKoridor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/dbConnect.php" afterPath="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/view/koridor.html" afterPath="$PROJECT_DIR$/public/app/view/koridor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/view/map.html" afterPath="$PROJECT_DIR$/public/app/view/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.mdl.js" afterPath="$PROJECT_DIR$/public/js/app.mdl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/global.ctrl.js" afterPath="$PROJECT_DIR$/public/js/global.ctrl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/app/model/getKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridorEdit.php" />
     </list>
     <ignored path="maminasata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,91 +109,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="map.ctrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/map.ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.283019">
-              <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
-              <folding>
-                <element signature="n#style#0;n#a#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="koridor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/koridor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.192308">
-              <caret line="204" column="63" selection-start-line="203" selection-start-column="0" selection-end-line="204" selection-end-column="63" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="koridor.ctrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/koridor.ctrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="418">
+              <caret line="177" column="43" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getLocationHalte.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/getLocationHalte.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <marker date="1460949089484" expanded="true" signature="380:446" placeholder="SELECT * FRO... halte" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getPerjalananBus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/getPerjalananBus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <marker date="1460943468850" expanded="true" signature="383:518" placeholder="SELECT * FRO... perjalanan" />
+                <marker date="1460943468850" expanded="true" signature="383:526" placeholder="SELECT p.*, perjalanan" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="370">
+              <caret line="40" column="145" selection-start-line="40" selection-start-column="145" selection-end-line="40" selection-end-column="145" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbConnect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/service/dbConnect.php">
+      <file leaf-file-name="materialize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/materialize/js/materialize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="androidGetPerjalanan.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php">
+      <file leaf-file-name="materialize.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/materialize/js/materialize.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5798923">
-              <caret line="19" column="178" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="178" />
+            <state relative-caret-position="102">
+              <caret line="5" column="132" selection-start-line="5" selection-start-column="132" selection-end-line="5" selection-end-column="132" />
               <folding>
-                <marker date="1456907160492" expanded="true" signature="412:461" placeholder="SELECT * FRO... perjalanan" />
-                <marker date="1456907160492" expanded="true" signature="412:469" placeholder="SELECT * FRO... perjalanan" />
-                <marker date="1456907160492" expanded="true" signature="528:573" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="528:588" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="528:595" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="528:619" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="528:645" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="528:666" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="528:687" placeholder="INSERT INTO perjalanan... " />
-                <marker date="1456907160492" expanded="true" signature="808:850" placeholder="UPDATE perja... " />
-                <marker date="1456907160492" expanded="true" signature="808:874" placeholder="UPDATE perja... " />
-                <marker date="1456907160492" expanded="true" signature="808:900" placeholder="UPDATE perja... " />
-                <marker date="1456907160492" expanded="true" signature="808:901" placeholder="UPDATE perja... " />
-                <marker date="1456907160492" expanded="true" signature="808:940" placeholder="UPDATE perja... " />
-                <marker date="1456907160492" expanded="true" signature="808:965" placeholder="UPDATE perja... " />
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getHalte.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/getHalte.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1459329058783" expanded="true" signature="384:436" placeholder="SELECT * FRO... halte" />
               </folding>
             </state>
           </provider>
@@ -137,38 +191,32 @@
       <file leaf-file-name="global.ctrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/global.ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/connection.php">
+      <file leaf-file-name="androidGetPerjalanan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+              <folding>
+                <marker date="1460940729949" expanded="true" signature="407:464" placeholder="SELECT * FRO... perjalanan" />
+                <marker date="1460940729949" expanded="true" signature="523:682" placeholder="INSERT INTO perjalanan... " />
+                <marker date="1460940729949" expanded="true" signature="852:1009" placeholder="UPDATE perja... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <file leaf-file-name="koridorEdit.ctrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/koridorEdit.ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.mdl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="549">
+              <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -190,10 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/map.html" />
-        <option value="$PROJECT_DIR$/public/map/model/connection.php" />
-        <option value="$PROJECT_DIR$/public/map/map2.ctrl.js" />
-        <option value="$PROJECT_DIR$/public/map/model/getKoridor.php" />
         <option value="$PROJECT_DIR$/../caryta-dev/caryta_dev/assets/css/style.css" />
         <option value="$PROJECT_DIR$/maminasata/index.html" />
         <option value="$PROJECT_DIR$/maminasata/public/map/model/getRute.php" />
@@ -204,22 +248,47 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/public/app/map.ctrl.js" />
         <option value="$PROJECT_DIR$/public/app/model/hapusKoridor.php" />
         <option value="$PROJECT_DIR$/public/app/model/postKoridor.php" />
-        <option value="$PROJECT_DIR$/public/app/koridor.ctrl.js" />
         <option value="$PROJECT_DIR$/public/app/model/postHalte.php" />
         <option value="$PROJECT_DIR$/public/app/model/getKoridor.php" />
-        <option value="$PROJECT_DIR$/public/app/model/postBus.php" />
-        <option value="$PROJECT_DIR$/public/js/global.ctrl.js" />
-        <option value="$PROJECT_DIR$/public/app/model/connection.php" />
-        <option value="$PROJECT_DIR$/public/app/view/koridor.html" />
+        <option value="$PROJECT_DIR$/public/app/model/service/anroidLogin.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/anroidBusLogin.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/anroidBusLogout.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/androidPostPerjalanan.php" />
+        <option value="$PROJECT_DIR$/public/app/view/edit_koridor.html" />
+        <option value="$PROJECT_DIR$/public/app/model/postKoridorEdit.php" />
+        <option value="$PROJECT_DIR$/public/app/model/postTambahRute.php" />
+        <option value="$PROJECT_DIR$/public/app/model/hapusRute.php" />
+        <option value="$PROJECT_DIR$/public/app/model/getKoridorEdit.php" />
+        <option value="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
+        <option value="$PROJECT_DIR$/public/app/koridor.ctrl.js" />
         <option value="$PROJECT_DIR$/public/js/app.mdl.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/public/app/view/map.html" />
+        <option value="$PROJECT_DIR$/public/app/model/getHalteEdit.php" />
+        <option value="$PROJECT_DIR$/public/app/model/postTambahHalte.php" />
+        <option value="$PROJECT_DIR$/public/app/model/postHalteEdit.php" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
+        <option value="$PROJECT_DIR$/public/app/view/halte.edit.html" />
+        <option value="$PROJECT_DIR$/public/app/model/hapusHalte.php" />
+        <option value="$PROJECT_DIR$/public/app/view/koridor.html" />
+        <option value="$PROJECT_DIR$/public/app/halteEdit.ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/view/koridor.edit.html" />
+        <option value="$PROJECT_DIR$/public/app/koridorEdit.ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/model/getPerjalanBus.php" />
+        <option value="$PROJECT_DIR$/public/app/model/getKoridorOnly.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/public/app/model/connection.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/androidBusLogin.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/androidBusLogout.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/androidGetData.php" />
         <option value="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
+        <option value="$PROJECT_DIR$/public/app/model/postBus.php" />
+        <option value="$PROJECT_DIR$/public/app/model/getPerjalananBus.php" />
+        <option value="$PROJECT_DIR$/public/js/global.ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/model/getLocationHalte.php" />
+        <option value="$PROJECT_DIR$/public/app/map.ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/view/map.html" />
       </list>
     </option>
   </component>
@@ -263,17 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +347,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -299,15 +357,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -317,15 +375,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -335,19 +393,19 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -357,59 +415,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -419,47 +429,26 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="location-picker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="materialize" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maminasata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -470,7 +459,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../maminasata-online" />
     <property name="SearchEverywhereHistoryKey" value="plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -480,23 +469,24 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\XAMPP\htdocs\project\maminasata\public\app\model\service" />
-      <recent name="D:\XAMPP\htdocs\project\maminasata\public\app\model" />
-      <recent name="D:\XAMPP\htdocs\project\maminasata\public\js" />
-      <recent name="D:\XAMPP\htdocs\project\maminasata\lib\location-picker" />
-      <recent name="D:\XAMPP\htdocs\project\maminasata\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAMPP\htdocs\project\maminasata\lib\materialize\font" />
       <recent name="D:\XAMPP\htdocs\project\maminasata" />
       <recent name="D:\XAMPP\htdocs\project\maminasata\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\XAMPP\htdocs\project\maminasata\lib\materialize" />
+      <recent name="D:\XAMPP\htdocs\project\maminasata\public\app\model" />
+      <recent name="D:\XAMPP\htdocs\project\maminasata\public\app" />
+      <recent name="D:\XAMPP\htdocs\project\maminasata\lib\materialize\fonts" />
+      <recent name="D:\XAMPP\htdocs\project\maminasata\lib\angular-materializecss" />
     </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -511,6 +501,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -521,10 +512,12 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>C:/Program Files/nodejs/node.exe</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
@@ -537,7 +530,9 @@
       <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -546,39 +541,68 @@
       <changelist id="74b47f84-9b86-4787-878e-86e63c920df2" name="Default" comment="" />
       <created>1454434612685</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1454434612685</updated>
+      <workItem from="1458884383342" duration="2343000" />
+      <workItem from="1458937145386" duration="1117000" />
+      <workItem from="1459151321143" duration="2799000" />
+      <workItem from="1459248573385" duration="589000" />
+      <workItem from="1459276981216" duration="11905000" />
+      <workItem from="1459317647348" duration="17233000" />
+      <workItem from="1460617117722" duration="33000" />
+      <workItem from="1460931402295" duration="15578000" />
     </task>
     <task id="LOCAL-00001" summary="fix sedikit eror">
       <created>1454555735377</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1454555735377</updated>
     </task>
     <task id="LOCAL-00002" summary="commit directory">
       <created>1454638234989</created>
       <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1454638234989</updated>
     </task>
     <task id="LOCAL-00003" summary="commit vcs.xml, workspace.xml&#10;">
       <created>1454638385142</created>
       <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
       <updated>1454638385142</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit directory">
+      <created>1456913212855</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1456913212855</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit index.html">
+      <created>1456913678481</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1456913678481</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30711043" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -608,16 +632,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix sedikit eror" />
-    <MESSAGE value="commit directory" />
     <MESSAGE value="commit vcs.xml, workspace.xml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit vcs.xml, workspace.xml&#10;" />
+    <MESSAGE value="commit directory" />
+    <MESSAGE value="commit index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit index.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/app.mdl.js</url>
-          <line>18</line>
+          <line>28</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -625,441 +650,422 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/model/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getRute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui-router/angular-ui-router.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
+        <state relative-caret-position="0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tiketbusku-sisfo-v.1.2.0/assets/js/controller/jadwal/kalenderCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81353134">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/getRute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/materialize/css/materialize.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="5" column="31337" selection-start-line="5" selection-start-column="31337" selection-end-line="5" selection-end-column="31337" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/location-picker/locationpicker.jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/angular-googlemap-location-picker-master/angular-googlemap-location-picker-master/demo/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/angular-googlemap-location-picker-master/angular-googlemap-location-picker-master/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
+        <state relative-caret-position="0">
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/angular-googlemap-location-picker-master/angular-googlemap-location-picker-master/demo/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/locator-master/locator-master/example/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
+        <state relative-caret-position="0">
           <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
+        <state relative-caret-position="0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/hapusKoridor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
+        <state relative-caret-position="0">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/postKoridor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <marker date="1456897202000" expanded="true" signature="411:465" placeholder="INSERT INTO koridor... " />
-            <marker date="1456897202000" expanded="true" signature="539:602" placeholder="SELECT id_ko... koridor" />
-            <marker date="1456897202000" expanded="true" signature="916:1063" placeholder="INSERT INTO rute... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/postHalte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding>
-            <marker date="1456900186000" expanded="true" signature="433:455" placeholder="INSERT INTO halte... " />
-            <marker date="1456900186000" expanded="true" signature="433:481" placeholder="INSERT INTO halte... " />
-            <marker date="1456900186000" expanded="true" signature="433:508" placeholder="INSERT INTO halte... " />
-            <marker date="1456900186000" expanded="true" signature="433:537" placeholder="INSERT INTO halte... " />
-            <marker date="1456900186000" expanded="true" signature="433:558" placeholder="INSERT INTO halte... " />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridor.php">
+    <entry file="file://$PROJECT_DIR$/lib/angular-materializecss/angular.min.js" />
+    <entry file="file://$PROJECT_DIR$/lib/angular-materializecss/angular-materialize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding>
-            <marker date="1456900432000" expanded="true" signature="377:407" placeholder="SELECT DISTI... koridor" />
-            <marker date="1456900432000" expanded="true" signature="543:580" placeholder="SELECT * FRO... rute" />
-            <marker date="1456900432000" expanded="true" signature="543:582" placeholder="SELECT * FRO... rute" />
-            <marker date="1456900432000" expanded="true" signature="543:599" placeholder="SELECT * FRO... rute" />
-            <marker date="1456900432000" expanded="true" signature="793:850" placeholder="SELECT * FRO... halte" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postBus.php">
+    <entry file="file://$PROJECT_DIR$/public/app/model/postTambahRute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1456905214000" expanded="true" signature="431:477" placeholder="INSERT INTO bus... " />
-            <marker date="1456905214000" expanded="true" signature="431:493" placeholder="INSERT INTO bus... " />
-            <marker date="1456905214000" expanded="true" signature="431:522" placeholder="INSERT INTO bus... " />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/map.ctrl.js">
+    <entry file="file://$PROJECT_DIR$/public/app/model/hapusRute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/global.ctrl.js">
+    <entry file="file://$PROJECT_DIR$/public/app/model/postKoridorEdit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="421">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridorEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/koridor.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="374">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getHalteEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postTambahHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postHalteEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/halte.edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/hapusHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1459335322941" expanded="true" signature="378:424" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/halteEdit.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
+    <entry file="file://$PROJECT_DIR$/public/app/view/koridor.edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/view/koridor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.192308">
-          <caret line="204" column="63" selection-start-line="203" selection-start-column="0" selection-end-line="204" selection-end-column="63" />
+        <state relative-caret-position="-1054">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.283019">
-          <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
+    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="40">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridorOnly.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <marker date="1460938823179" expanded="true" signature="377:407" placeholder="SELECT DISTI... koridor" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/service/androidBusLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+          <folding>
+            <marker date="1460940729732" expanded="true" signature="309:416" placeholder="SELECT * FRO... user_bus" />
+            <marker date="1460940729732" expanded="true" signature="672:729" placeholder="UPDATE user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/service/androidBusLogout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+          <folding>
+            <marker date="1460940729855" expanded="true" signature="266:333" placeholder="SELECT * FRO... user_bus" />
+            <marker date="1460940729855" expanded="true" signature="523:581" placeholder="UPDATE user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/service/androidGetData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+          <folding>
+            <marker date="1460940729902" expanded="true" signature="252:273" placeholder="SELECT * FRO... koridor" />
+            <marker date="1460940729902" expanded="true" signature="539:596" placeholder="SELECT * FRO... halte" />
+            <marker date="1460940729902" expanded="true" signature="815:870" placeholder="SELECT * FRO... bus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/service/dbConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="391">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/service/dbConnect.php">
+    <entry file="file://$PROJECT_DIR$/public/app/model/postBus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="322">
+          <caret line="30" column="88" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
+          <folding>
+            <marker date="1460941323335" expanded="true" signature="495:587" placeholder="INSERT INTO bus... " />
+            <marker date="1460941323335" expanded="true" signature="680:723" placeholder="SELECT id_bu... bus" />
+            <marker date="1460941323335" expanded="true" signature="680:731" placeholder="SELECT id_bu... bus" />
+            <marker date="1460941323335" expanded="true" signature="851:981" placeholder="INSERT INTO user_bus... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/koridorEdit.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5798923">
-          <caret line="19" column="178" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="178" />
+        <state relative-caret-position="34">
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
           <folding>
-            <marker date="1456907160492" expanded="true" signature="412:461" placeholder="SELECT * FRO... perjalanan" />
-            <marker date="1456907160492" expanded="true" signature="412:469" placeholder="SELECT * FRO... perjalanan" />
-            <marker date="1456907160492" expanded="true" signature="528:573" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="528:588" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="528:595" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="528:619" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="528:645" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="528:666" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="528:687" placeholder="INSERT INTO perjalanan... " />
-            <marker date="1456907160492" expanded="true" signature="808:850" placeholder="UPDATE perja... " />
-            <marker date="1456907160492" expanded="true" signature="808:874" placeholder="UPDATE perja... " />
-            <marker date="1456907160492" expanded="true" signature="808:900" placeholder="UPDATE perja... " />
-            <marker date="1456907160492" expanded="true" signature="808:901" placeholder="UPDATE perja... " />
-            <marker date="1456907160492" expanded="true" signature="808:940" placeholder="UPDATE perja... " />
-            <marker date="1456907160492" expanded="true" signature="808:965" placeholder="UPDATE perja... " />
+            <marker date="1460940729949" expanded="true" signature="407:464" placeholder="SELECT * FRO... perjalanan" />
+            <marker date="1460940729949" expanded="true" signature="523:682" placeholder="INSERT INTO perjalanan... " />
+            <marker date="1460940729949" expanded="true" signature="852:1009" placeholder="UPDATE perja... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getPerjalananBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1460943468850" expanded="true" signature="383:518" placeholder="SELECT * FRO... perjalanan" />
+            <marker date="1460943468850" expanded="true" signature="383:526" placeholder="SELECT p.*, perjalanan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459329058783" expanded="true" signature="384:436" placeholder="SELECT * FRO... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/global.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getLocationHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <marker date="1460949089484" expanded="true" signature="380:446" placeholder="SELECT * FRO... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/materialize/css/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/materialize/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/materialize/js/materialize.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="5" column="132" selection-start-line="5" selection-start-column="132" selection-end-line="5" selection-end-column="132" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/map.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="177" column="43" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="40" column="145" selection-start-line="40" selection-start-column="145" selection-end-line="40" selection-end-column="145" />
+          <folding />
         </state>
       </provider>
     </entry>

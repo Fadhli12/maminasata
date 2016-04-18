@@ -4,7 +4,7 @@
 myApp.controller('globalCtrl',function($scope,$http){
     $scope.koridor = [];
     $scope.bus = {};
-    $http.get('public/app/model/getKoridor.php')
+    $http.get('public/app/model/getKoridorOnly.php')
         .then(function(res){
             $scope.koridor = res.data
         },function(){
@@ -20,4 +20,5 @@ myApp.controller('globalCtrl',function($scope,$http){
                 console.log(res);
             })
     };
+    
 });

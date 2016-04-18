@@ -12,12 +12,8 @@
                 </div>
                 <div class="col s12 m5 l5">
                     <div class="row">
-                        <div class="col s9">
-                            <label for="lokasi">Rute</label>
-                            <input disabled value="Pilih lokasi klik map!" id="lokasi" type="text" class="validate">
-                        </div>
                         <div class="col s3" style="padding-top: 30px">
-                            <a data-target="map-modal" id="map-btn" class="btn grey darken-1 waves-effect waves-light modal-trigger"><span class="fa fa-map-marker"></span></a>
+                            <a id="map-btn" class="btn grey darken-1 waves-effect waves-light" ng-click="openModal('map-modal')"><span class="fa fa-map-marker"></span></a>
                         </div>
                     </div>
                 </div>
@@ -60,8 +56,8 @@
                         </div>
                         <div class="col s4">
                             <div class="col s12">
-                                <label for="lokasi-kordinat">Lokasi</label>
-                                <input id="lokasi-kordinat" type="text" class="validate" placeholder="Lokasi">
+                                <label for="lokasi">Lokasi</label>
+                                <input id="lokasi" type="text" class="validate" placeholder="Lokasi">
                             </div>
                             <div class="col s12">
                                 <label for="latitude">Latitude</label>
@@ -106,9 +102,10 @@
                         <td><span  ng-repeat="rute in data.rute track by $index"><i ng-show="$middle"> - </i>{{rute}}</span></td>
                         <td><span  ng-repeat="halte in data.halte track by $index"><i ng-show="$middle"> - </i>{{halte}}</span></td>
                         <td>
-                            <a ng-click="openModal('edit-modal')" class="modal-trigger col s12 btn red waves-effect waves-light">EDIT</a><br><br>
-                            <a ng-click="openHalte(data.id_koridor)" class="map-btn-halte modal-trigger col s12 btn red waves-effect waves-light">Halte</a><br><br>
+                            <a href="#/edit-koridor/{{data.id_koridor}}" class="col s12 btn blue waves-effect waves-light">EDIT</a><br><br>
+                            <a href="#/edit-halte/{{data.id_koridor}}" class="map-btn-halte col s12 btn red waves-effect waves-light">Halte</a><br><br>
                             <a ng-click="hapusKoridor(data.id_koridor, data.nama_koridor)" class="col s12 btn grey darken-1 waves-effect waves-light">HAPUS</a>
+                            <!--<a ng-click="openHalte(data.id_koridor)" class="map-btn-halte col s12 btn red waves-effect waves-light">Halte</a><br><br>-->
                         </td>
                     </tr>
                     </tbody>
@@ -191,6 +188,9 @@
                     </div>
                     <div class="col s12">
                         <a class="btn grey darken-1 waves-effect waves-light" ng-click="tambahHalte()"><i class="fa fa-plus"></i> Halte</a>
+                    </div>
+                    <div class="col s12">
+                        <a class="modal-close btn grey darken-1 waves-effect waves-light" href="#/edit-halte/{{id_koridor}}"><i class="fa fa-plus"></i> Edit Halte</a>
                     </div>
                 </div>
             </div>

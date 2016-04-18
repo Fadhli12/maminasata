@@ -1,5 +1,5 @@
 
-<div class="row">
+<label class="row">
     <div class="fixed-action-btn vertical click-to-toggle hide-on-med-and-up" style="bottom: 45px; right: 50px;">
         <a class="btn-floating btn-large red"><i class="large material-icons">mode_edit</i></a>
         <ul>
@@ -10,11 +10,37 @@
     <!--<div class="app-responsive">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7947.548304256147!2d119.492297!3d-5.140026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b4ca65b54d5505f!2sPizza+Ria+Kafe!5e0!3m2!1sen!2s!4v1454475244322" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>-->
-    <div id="map_canvas" class="map-responsive">
+    <div class="col s12 m8 l9 no-padding">
+        <div id="map_canvas" class="map-responsive">
 
+        </div>
     </div>
+    <label class="col s12 m4 l3 no-padding">
+        <h6>Informasi Bus</h6>
+        <div class="card">
+            <div class="card-content">
+                <label>Nama Bus</label><br>
+                <label>: {{dataBus.nama}}</label><br>
+
+                <label>Status</label><br>
+                <label>: {{dataBus.status_perjalan}}</label><br>
+
+                <label>Kecepatan</label><br>
+                <label>: {{dataBus.kecepatan}} km/jam</label><br>
+
+                <label>Lokasi</label><br>
+                <label>: </label><br>
+
+                <label>ETA</label><br>
+                <div class="">
+                    <select class="browser-default" ng-model="pencarian.halte" watch>
+                        <option value="" disabled>pilih halte</option>
+                        <option ng-repeat="koridor in dataKoridor" value="{{koridor.id_halte}}">{{koridor.nama}}</option>
+                    </select>
+                </div>
+                <label>: {{etaJam}}<span ng-hide="etaJam > 0"> 0</span> Jam {{etaMenit}} <span ng-hide="etaMenit > 0"> 0</span>  Menit {{etaDetik}}<span ng-hide="etaDetik > 0"> 0</span>  Detik</label>
+            </div>
+        </div>
+    </div>
+
 </div>
-<!--jquery script-->
-<script>
-    $('.modal-trigger').leanModal();
-</script>

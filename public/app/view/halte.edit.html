@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="card-panel">
+                <div class="row">
+                    <div class="col s8 m8 l8 input-field">
+                        <a ng-click="openModal('tambah-halte')" class="btn waves-effect waves-light"> Tambah Halte <i class="zmdi zmdi-google-maps"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-panel">
+
+            <table class="centered highlight">
+                <thead>
+                <tr>
+                    <th data-field="no">NO.</th>
+                    <th data-field="nama">NAMA HALTE</th>
+                    <th data-field="lokasi">LATITUDE</th>
+                    <th data-field="lokasi">LONGITUDE</th>
+                    <th data-field="aksi">AKSI</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="halte in list_halte">
+                    <td>{{$index+1}}</td>
+                    <td>{{halte.nama}}</td>
+                    <td>{{halte.latitude}}</td>
+                    <td>{{halte.longitude}}</td>
+                    <td>
+                        <a ng-click="editHalte($index)" class="btn waves-effect waves-light">Edit</a>
+                        <a ng-click="modalConfirm($index)"  class="btn waves-effect waves-light">Hapus</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--MODAL STRUCTURE-->
+    <div id="edit-halte-modal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s8">
+                    <div id="map-picker-halte" style="width: 400px; height: 400px;"></div>
+                </div>
+                <div class="col s4">
+                    <div class="col s12">
+                        <label for="lokasi-halte">Lokasi</label>
+                        <input id="lokasi-halte" type="text" class="validate" placeholder="Lokasi">
+                    </div>
+                    <div class="col s12">
+                        <label for="latitude-halte">Latitude</label>
+                        <input id="latitude-halte" type="text" class="validate" placeholder="Latitude">
+                    </div>
+                    <div class="col s12">
+                        <label for="longitude-halte">Longitude</label>
+                        <input id="longitude-halte" type="text" class="validate" placeholder="Longitude">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a ng-click="saveEditHalte()" class="modal-action modal-close btn red waves-effect waves-light">SIMPAN</a>
+            <a class="btn modal-action modal-close waves-effect waves-light">BATAL</a>
+        </div>
+    </div>
+    <div id="tambah-halte" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s8">
+                    <div id="map-picker" style="width: 400px; height: 400px;"></div>
+                </div>
+                <div class="col s4">
+                    <div class="col s12">
+                        <label for="lokasi">Lokasi</label>
+                        <input id="lokasi" type="text" class="validate" placeholder="Lokasi">
+                    </div>
+                    <div class="col s12">
+                        <label for="latitude">Latitude</label>
+                        <input id="latitude" type="text" class="validate" placeholder="Latitude">
+                    </div>
+                    <div class="col s12">
+                        <label for="longitude">Longitude</label>
+                        <input id="longitude" type="text" class="validate" placeholder="Longitude">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a ng-click="tambahHalte()" class="modal-action modal-close btn red waves-effect waves-light">SIMPAN</a>
+            <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+        </div>
+    </div>
+    <div id="confirm" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <i><b>Yakin Ingin Menghapus Halte !!</b></i>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a ng-click="hapusHalte(id_halte_hapus)" class="modal-action modal-close btn red waves-effect waves-light">Ya</a>
+            <a class="modal-action modal-close btn-flat waves-effect waves-light">Tidak</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="public/js/app.js"></script>

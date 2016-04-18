@@ -7,9 +7,9 @@ date_timezone_set("Asia/Singapore");
 class Database {
 	private $_connection;
 	private static $_instance; //The single instance
-	private $_host = "192.168.23.23";
-	private $_username = "maminasata";
-	private $_password = "maminasata123";
+	private $_host = "localhost";
+	private $_username = "root";
+	private $_password = "";
 	private $_database = "maminasata";
 	private $error = 0;
 	/*

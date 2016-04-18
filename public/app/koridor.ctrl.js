@@ -51,10 +51,12 @@ myApp.controller('koridorCtrl',function($scope,$http){
                 console.log(res);
             })
     }
-
     $scope.openModal = function(id){
+        
         $('#'+id).openModal();
+        $('#map-picker').locationpicker('autosize');
     }
+
     $scope.openHalte = function(id){
         $('#halte-modal').openModal();
         $('#map-picker-halte').locationpicker('autosize');

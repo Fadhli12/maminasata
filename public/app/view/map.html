@@ -1,9 +1,10 @@
 
-<div class="row">
+<div class="row cyan darken-2">
     <div class="fixed-action-btn vertical click-to-toggle hide-on-med-and-up" style="bottom: 45px; right: 50px;">
         <a class="btn-floating btn-large red"><i class="large material-icons">mode_edit</i></a>
         <ul>
-            <li ng-repeat="data in koridor"><a ng-click ="getRute(data.id_koridor)" class="btn-floating red waves-effect waves-light tooltipped" data-position="bottom" data-delay="5" data-tooltip="Koridor 1"><i class="active material-icons">store</i></a></li>
+            <li ng-repeat="data in koridor"><a ng-click ="getRute(data.id_koridor)" class="btn-floating red waves-effect waves-light"><i class="active material-icons">store</i></a><label
+                    >{{data.nama_koridor}}</label></li>
         </ul>
     </div>
     <!-- Map -->
@@ -13,20 +14,21 @@
     <div class="col s12 m12 l12 no-padding" style="position: relative">
         <div id="map_canvas" class="map-responsive"></div>
         <div class="row" style="position: absolute; top: 0;right: 0;">
-            <div class="col s12 m12 l12">
+            <div class="col hide-on-small-and-down m12 l12">
                 <div class="card-panel">
                     <div class="row red white-text center">
                         <div class="col s12 m12 l12">
                             <h5>Informasi Bus</h5>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 0">
+                        <label>Tujuan Bus</label>
                         <select ng-model="pencarian.halte" watch material-select>
                             <option value="" disabled>Pilih Halte Tujuan</option>
                             <option ng-repeat="koridor in dataKoridor" value="{{koridor.id_halte}}">{{koridor.nama}}</option>
                         </select>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-top: 0">
                         <label>Nama Bus</label><br>
                         <h6>{{dataBus.nama}}</h6>
 
@@ -44,6 +46,38 @@
                         <h6>{{etaJam}}<span ng-hide="etaJam > 0"> 0</span> Jam {{etaMenit}} <span ng-hide="etaMenit > 0"> 0</span>  Menit {{etaDetik}}<span ng-hide="etaDetik > 0"> 0</span>  Detik</h6>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 hide-on-med-and-up">
+        <div class="card-panel">
+            <div class="row red white-text center">
+                <div class="col s12 m12 l12">
+                    <h6>Informasi Bus</h6>
+                </div>
+            </div>
+            <div class="row">
+                <select ng-model="pencarian.halte" watch material-select>
+                    <option value="" disabled>Pilih Halte Tujuan</option>
+                    <option ng-repeat="koridor in dataKoridor" value="{{koridor.id_halte}}">{{koridor.nama}}</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>Nama Bus</label><br>
+                <h6>{{dataBus.nama}}</h6>
+
+                <label>Status</label><br>
+                <h6>{{dataBus.status_perjalan}}</h6>
+
+                <label>Kecepatan</label><br>
+                <h6>{{dataBus.kecepatan}} km/jam</h6>
+
+                <!--<label>Lokasi</label><br>-->
+                <!--<h6></h6>-->
+
+                <label>ETA</label><br>
+
+                <h6>{{etaJam}}<span ng-hide="etaJam > 0"> 0</span> Jam {{etaMenit}} <span ng-hide="etaMenit > 0"> 0</span>  Menit {{etaDetik}}<span ng-hide="etaDetik > 0"> 0</span>  Detik</h6>
             </div>
         </div>
     </div>

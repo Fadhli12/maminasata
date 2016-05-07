@@ -19,8 +19,6 @@ $id_koridor = $request->id_koridor;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
-
 $sql_query = "SELECT * FROM halte WHERE id_koridor = '$id_koridor'";
 $result = $mysqli->query($sql_query);
 if (mysqli_num_rows($result)>0){

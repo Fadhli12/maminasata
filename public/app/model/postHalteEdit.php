@@ -22,7 +22,5 @@ $nama = $request->nama;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
-
 $sql_query = "UPDATE halte SET latitude = '$latitude', longitude = '$longitude', nama= '$nama' WHERE id_halte = '$id_halte'";
 $result = $mysqli->query($sql_query);

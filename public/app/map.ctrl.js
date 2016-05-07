@@ -1,7 +1,7 @@
 /**
  * Created by Genesis on 03/02/2016.
  */
-myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams) {
+myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $state) {
     var myOptions = {
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -88,53 +88,65 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams) {
 
     function setBus() {
         // console.log('set bus')
-        $http.post('public/app/model/getPerjalananBus.php',{id_koridor : koridor})
-            .then(function(res){
-                if (res.data != 'null'){
-                    $scope.dataBus = res.data;
-                    var latitude = res.data.latitude;
-                    var longitude = res.data.longitude;
-                    var title = res.data.nama;
+        if (($scope.pencarian.bus != undefined) && ($scope.pencarian.bus != '')){
+            var id_bus = $scope.pencarian.bus;
+            $http.post('public/app/model/getPerjalananBus.php',{id_koridor : koridor,id_bus:id_bus})
+                .then(function(res){
+                    if (res.data != 'null'){
+                        $scope.dataBus = res.data;
+                        var latitude = res.data.latitude;
+                        var longitude = res.data.longitude;
+                        var title = res.data.nama;
 
-                    var bus = {latitude: latitude, longitude: longitude};
-                    var iconBase = 'assets/img/icon/';
-                    var marker = new google.maps.Marker({
-                        map: map,
-                        position: new google.maps.LatLng(bus.latitude, bus.longitude),
-                        title: title,
-                        icon: iconBase + 'icon-bus.png'
-                    });
+                        var bus = {latitude: latitude, longitude: longitude};
+                        var iconBase = 'assets/img/icon/';
+                        var marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(bus.latitude, bus.longitude),
+                            title: title,
+                            icon: iconBase + 'icon-bus.png'
+                        });
 
-                    busMarkers.push(marker);
-                    for (m = 1; m <= busMarkers.length; m++) {
-                        if (m < busMarkers.length) {
-                            busMarkers[m - 1].setMap(null);
+                        busMarkers.push(marker);
+                        for (m = 1; m <= busMarkers.length; m++) {
+                            if (m < busMarkers.length) {
+                                busMarkers[m - 1].setMap(null);
+                            }
+                            if (m == busMarkers.length) {
+                                busMarkers[m - 1].setMap(map);
+                            }
                         }
-                        if (m == busMarkers.length) {
-                            busMarkers[m - 1].setMap(map);
-                        }
+                        $scope.getETA();
+                    } else {
+                        console.log('tidak ada bus!');
                     }
-                    $scope.getETA();
-                } else {
-                    console.log('tidak ada bus!');
-                }
 
-            },function(){
-                console.log('error');
-            })
+                },function(){
+                    console.log('error');
+                })    
+        }
+        
     }
 
     /*for (x = 0 ; x < busMarkers.length; x++){
      halteMarkers[x].setMap(map);
      infowindow[x].setMap(map);
      }*/
+
     $interval(setBus, 5000);
 
     //materalizecss jquery script
 
     $http.post('public/app/model/getHalte.php',{'id_koridor':koridor})
         .then(function(res){
-            $scope.dataKoridor = res.data
+            $scope.dataHalte = res.data
+        },function(){
+            console.log('error');
+        }) 
+    
+    $http.post('public/app/model/getBusOnly.php',{'id_koridor':koridor})
+        .then(function(res){
+            $scope.listBus = res.data
         },function(){
             console.log('error');
         })
@@ -146,7 +158,6 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams) {
             var longitude_bus = $scope.dataBus.longitude;
             $http.post('public/app/model/getLocationHalte.php',{'id_halte':$scope.pencarian.halte})
                 .then(function(res){
-                    console.log(res.data);
                     var latitude_halte = res.data.latitude;
                     var longitude_halte = res.data.longitude;
 
@@ -159,23 +170,18 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams) {
                     dirService.route(request, function(response, status) {
                         if (status == google.maps.DirectionsStatus.OK) {
 
-                            // Display the distance:
-                            //     console.log('distance='+response.routes[0].legs[0].distance.value);
-
-                            // Display the duration:
-                            //     console.log('time='+response.routes[0].legs[0].duration.value);
-
-
-                            $scope.eta = parseInt(response.routes[0].legs[0].distance.value)/ (parseInt($scope.dataBus.kecepatan)*1000/3600) ;
-                            if ($scope.eta > 3600){
-                                $scope.etaJam = Math.floor($scope.eta/3600);
-                                $scope.eta = $scope.eta - ($scope.eatJam * 3600);
+                            if ($scope.dataBus.status_perjalanan != 'berhenti'){
+                                $scope.eta = parseInt(response.routes[0].legs[0].distance.value)/ (parseInt($scope.dataBus.kecepatan)*1000/3600) ;
+                                if ($scope.eta > 3600){
+                                    $scope.etaJam = Math.floor($scope.eta/3600);
+                                    $scope.eta = $scope.eta - ($scope.eatJam * 3600);
+                                }
+                                if ($scope.eta > 60){
+                                    $scope.etaMenit = Math.floor($scope.eta/60);
+                                    $scope.eta = $scope.eta - ($scope.etaMenit * 60);
+                                    $scope.etaDetik = Math.floor($scope.eta);
+                                }
                             }
-                            if ($scope.eta > 60){
-                                $scope.etaMenit = Math.floor($scope.eta/60);
-                                $scope.eta = $scope.eta - ($scope.etaMenit * 60);
-                            }
-                            $scope.etaDetik = Math.floor($scope.eta);
                             dirRenderer.setDirections(response);
                         }
                     });

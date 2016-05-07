@@ -19,7 +19,6 @@ $rute = $request->rute;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
 $sql_query1 = "INSERT INTO koridor SET nama_koridor = '$nama_koridor'";
 $result1 = $mysqli->query($sql_query1);
 if ($result1){

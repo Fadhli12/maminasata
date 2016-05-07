@@ -2,14 +2,16 @@
 /*
 * Mysql database class - only one connection alowed
 */
+
 error_reporting(1);
+
 date_timezone_set("Asia/Singapore");
 class Database {
 	private $_connection;
 	private static $_instance; //The single instance
-	private $_host = "localhost";
-	private $_username = "root";
-	private $_password = "";
+	private $_host = "127.0.0.1";
+	private $_username = "maminasata";
+	private $_password = "998877665544rfv";
 	private $_database = "maminasata";
 	private $error = 0;
 	/*

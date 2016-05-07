@@ -102,8 +102,8 @@
                         <td><span  ng-repeat="rute in data.rute track by $index"><i ng-show="$middle"> - </i>{{rute}}</span></td>
                         <td><span  ng-repeat="halte in data.halte track by $index"><i ng-show="$middle"> - </i>{{halte}}</span></td>
                         <td>
-                            <a href="#/edit-koridor/{{data.id_koridor}}" class="col s12 btn blue waves-effect waves-light">EDIT</a><br><br>
-                            <a href="#/edit-halte/{{data.id_koridor}}" class="map-btn-halte col s12 btn red waves-effect waves-light">Halte</a><br><br>
+                            <a href="#/app/edit-koridor/{{data.id_koridor}}" class="col s12 btn blue waves-effect waves-light">EDIT</a><br><br>
+                            <a href="#/app/edit-halte/{{data.id_koridor}}" class="map-btn-halte col s12 btn red waves-effect waves-light">Halte</a><br><br>
                             <a ng-click="hapusKoridor(data.id_koridor, data.nama_koridor)" class="col s12 btn grey darken-1 waves-effect waves-light">HAPUS</a>
                             <!--<a ng-click="openHalte(data.id_koridor)" class="map-btn-halte col s12 btn red waves-effect waves-light">Halte</a><br><br>-->
                         </td>
@@ -190,7 +190,7 @@
                         <a class="btn grey darken-1 waves-effect waves-light" ng-click="tambahHalte()"><i class="fa fa-plus"></i> Halte</a>
                     </div>
                     <div class="col s12">
-                        <a class="modal-close btn grey darken-1 waves-effect waves-light" href="#/edit-halte/{{id_koridor}}"><i class="fa fa-plus"></i> Edit Halte</a>
+                        <a class="modal-close btn grey darken-1 waves-effect waves-light" href="#/app/edit-halte/{{id_koridor}}"><i class="fa fa-plus"></i> Edit Halte</a>
                     </div>
                 </div>
             </div>

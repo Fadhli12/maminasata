@@ -18,7 +18,7 @@ $id = $request->id;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
-error_reporting(0);
-$sql_query = "DELETE FROM koridor WHERE id_koridor = '$id'";
+
+echo $sql_query = "DELETE FROM koridor WHERE id_koridor = '$id'";
 $result = $mysqli->query($sql_query);
 

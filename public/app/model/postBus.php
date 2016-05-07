@@ -19,21 +19,21 @@ $nama = $request->nama;
 $plat = $request->plat;
 $username = $request->username;
 $password = $request->password;
+$no_telp = $request->no_telp;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
-$sql_query = "INSERT INTO bus SET id_koridor = '$id_koridor', nama = '$nama', plat = '$plat', status = '0'";
+$sql_query = "INSERT INTO user_bus SET nama = '$username', username = '$username', password = '$password', no_telp = '$no_telp', status = 'false'";
 $result = $mysqli->query($sql_query);
 
 if ($result){
-    $query_last_id = $mysqli->query("SELECT id_bus FROM bus ORDER BY id_bus DESC LIMIT 1");
+    $query_last_id = $mysqli->query("SELECT id FROM user_bus ORDER BY id DESC LIMIT 1");
     while ($row = mysqli_fetch_array($query_last_id)){
-        $last_id = $row['id_bus'];
+        $last_id = $row['id'];
     }
 
-    $sql_query2 = "INSERT INTO user_bus SET id_bus = '$last_id', nama = '$username', username = '$username', password = '$password', status = 'false'";
+    $sql_query2 = "INSERT INTO bus SET id_koridor = '$id_koridor', nama = '$nama', plat = '$plat', id_user = '$last_id', status = '1'";
     $result2 = $mysqli->query($sql_query2);
 
 }

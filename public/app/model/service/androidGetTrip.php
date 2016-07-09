@@ -31,6 +31,7 @@ if (($id_bus != '') && ($id_halte != '')){
             $insert_tmp = mysql_query("INSERT INTO tmp_jarak SET id_bus = '$id_bus', id_halte = '$id_halte', jarak = '$distance'");
         } else {
             $distance = 0;
+            $insert_tmp = mysql_query("INSERT INTO tmp_jarak SET id_bus = '$id_bus', id_halte = '$id_halte', jarak = '$distance'");
         }
     } else {
         if ($distance != null){

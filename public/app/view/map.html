@@ -3,17 +3,17 @@
     <div class="fixed-action-btn vertical click-to-toggle hide-on-med-and-up" style="bottom: 45px; right: 50px;">
         <a class="btn-floating btn-large red"><i class="large material-icons">mode_edit</i></a>
         <ul>
-            <li ng-repeat="data in koridor"><a ng-click ="getRute(data.id_koridor)" class="btn-floating red waves-effect waves-light tooltipped" data-position="bottom" data-delay="5" data-tooltip="Koridor 1"><i class="active material-icons">store</i></a></li>
+            <li ng-repeat="data in koridor"><a ng-click ="getRute(data.id_koridor)" href="#/app/map/{{data.id_koridor}}" class="btn-floating red waves-effect waves-light tooltipped" data-position="bottom" data-delay="5" data-tooltip="Koridor 1"><i class="active material-icons">store</i></a></li>
         </ul>
     </div>
     <!-- Map -->
     <!--<div class="app-responsive">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7947.548304256147!2d119.492297!3d-5.140026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b4ca65b54d5505f!2sPizza+Ria+Kafe!5e0!3m2!1sen!2s!4v1454475244322" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>-->
-    <div class="col s12 m12 l12 no-padding" style="position: relative">
-        <div id="map_canvas" class="map-responsive"></div>
+    <div class="col s12 m12 l12 no-padding" style="position: absolute; height: 100%; width: 100%;">
+        <div id="map_canvas" class="map-responsive" style="height: 100%"></div>
         <div class="row" style="position: absolute; top: 0;right: 0;">
-            <div class="col s12 m12 l12">
+            <div class="col s12 m12 l12 hide-on-small-and-down">
                 <div class="card-panel">
                     <div class="row red white-text center">
                         <div class="col s12 m12 l12">
@@ -51,6 +51,54 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Modal Trigger -->
+    <div class="vertical hide-on-med-and-up" style="position: fixed;bottom: 45px; left: 50px;">
+        <a class="modal-trigger btn-floating btn-large teal" modal href="#informasi-modal"><i class="fa fa-search"></i></a>
+    </div>
+    <!-- Modal Structure -->
+    <div id="informasi-modal" class="modal">
+        <div class="modal-content">
+            <div class="col s12 m12 l12">
+                <div class="row red white-text center">
+                    <div class="col s12 m12 l12">
+                        <h5>Informasi Bus</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <select ng-model="pencarian.bus" watch material-select>
+                        <option value="" disabled>Pilih Bus</option>
+                        <option ng-repeat="bus in listBus" value="{{bus.id_bus}}">{{bus.nama}}</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <select ng-model="pencarian.halte" watch material-select>
+                        <option value="" disabled>Pilih Halte Tujuan</option>
+                        <option ng-repeat="halte in dataHalte" value="{{halte.id_halte}}">{{halte.nama}}</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label>Nama Bus</label><br>
+                    <h6>{{dataBus.nama}}</h6>
+
+                    <label>Status</label><br>
+                    <h6>{{dataBus.status_perjalanan}}</h6>
+
+                    <label>Kecepatan</label><br>
+                    <h6>{{dataBus.kecepatan}} km/jam</h6>
+
+                    <!--<label>Lokasi</label><br>-->
+                    <!--<h6></h6>-->
+
+                    <label>ETA</label><br>
+
+                    <h6>{{etaJam}}<span ng-hide="etaJam > 0"> 0</span> Jam {{etaMenit}} <span ng-hide="etaMenit > 0"> 0</span>  Menit {{etaDetik}}<span ng-hide="etaDetik > 0"> 0</span>  Detik</h6>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close btn waves-effect waves-green btn-flat white-text blue">Tutup</a>
         </div>
     </div>
     <!--<div class="col s12 m3 l3 no-padding">-->

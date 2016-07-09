@@ -12,3 +12,4 @@ mysql_select_db('maminasata', $link) or die('Cannot select the DB');
 
 error_reporting(0);
 ?>
+   

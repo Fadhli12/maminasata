@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74b47f84-9b86-4787-878e-86e63c920df2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/login.ctrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/manajemenBus.ctrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getBusOnly.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getKoridor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/getListBus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/hapusBus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/saveBus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/saveUser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetBus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetHalte.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetKoridor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetTrip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/view/app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/view/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/view/manajemen_bus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/service/userModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/map.ctrl.js" afterPath="$PROJECT_DIR$/public/app/map.ctrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/connection.php" afterPath="$PROJECT_DIR$/public/app/model/connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getHalte.php" afterPath="$PROJECT_DIR$/public/app/model/getHalte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getHalteEdit.php" afterPath="$PROJECT_DIR$/public/app/model/getHalteEdit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getKoridorEdit.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridorEdit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getKoridorOnly.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridorOnly.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getLocationHalte.php" afterPath="$PROJECT_DIR$/public/app/model/getLocationHalte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getPerjalananBus.php" afterPath="$PROJECT_DIR$/public/app/model/getPerjalananBus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getRute.php" afterPath="$PROJECT_DIR$/public/app/model/getRute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusHalte.php" afterPath="$PROJECT_DIR$/public/app/model/hapusHalte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/hapusKoridor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusRute.php" afterPath="$PROJECT_DIR$/public/app/model/hapusRute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postBus.php" afterPath="$PROJECT_DIR$/public/app/model/postBus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postHalte.php" afterPath="$PROJECT_DIR$/public/app/model/postHalte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postHalteEdit.php" afterPath="$PROJECT_DIR$/public/app/model/postHalteEdit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/postKoridor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postKoridorEdit.php" afterPath="$PROJECT_DIR$/public/app/model/postKoridorEdit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postTambahHalte.php" afterPath="$PROJECT_DIR$/public/app/model/postTambahHalte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postTambahRute.php" afterPath="$PROJECT_DIR$/public/app/model/postTambahRute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/androidBusLogin.php" afterPath="$PROJECT_DIR$/public/app/model/service/androidBusLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/androidBusLogout.php" afterPath="$PROJECT_DIR$/public/app/model/service/androidBusLogout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/androidGetData.php" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" afterPath="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/service/dbConnect.php" afterPath="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" afterPath="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/view/koridor.html" afterPath="$PROJECT_DIR$/public/app/view/koridor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/view/map.html" afterPath="$PROJECT_DIR$/public/app/view/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.mdl.js" afterPath="$PROJECT_DIR$/public/js/app.mdl.js" />
     </list>
     <ignored path="maminasata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -197,8 +150,8 @@
       <file leaf-file-name="dbConnect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/model/service/dbConnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -261,7 +214,6 @@
         <option value="$PROJECT_DIR$/public/app/model/saveBus.php" />
         <option value="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
         <option value="$PROJECT_DIR$/public/app/model/connection.php" />
-        <option value="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
         <option value="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
         <option value="$PROJECT_DIR$/public/app/view/koridor.html" />
         <option value="$PROJECT_DIR$/public/js/service/userModel.js" />
@@ -271,6 +223,7 @@
         <option value="$PROJECT_DIR$/public/app/manajemenBus.ctrl.js" />
         <option value="$PROJECT_DIR$/public/app/model/saveUser.php" />
         <option value="$PROJECT_DIR$/public/app/view/manajemen_bus.html" />
+        <option value="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
       </list>
     </option>
   </component>
@@ -318,6 +271,7 @@
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Changed Files">
           <PATH>
@@ -340,7 +294,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,6 +415,7 @@
       <workItem from="1463773800424" duration="2517000" />
       <workItem from="1464341431995" duration="636000" />
       <workItem from="1468051175723" duration="48000" />
+      <workItem from="1468051292357" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="fix sedikit eror">
       <created>1454555735377</created>
@@ -498,18 +452,25 @@
       <option name="project" value="LOCAL" />
       <updated>1456913678481</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://github.com/Fadhli12/maminasata&#10;&#10;# Conflicts:&#10;#&#9;.idea/deployment.xml&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1468051407638</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1468051407638</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102434000" />
+    <option name="totallyTimeSpent" value="102554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32388973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38426626" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3903177" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -546,7 +507,8 @@
     <MESSAGE value="commit vcs.xml, workspace.xml&#10;" />
     <MESSAGE value="commit directory" />
     <MESSAGE value="commit index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit index.html" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Fadhli12/maminasata&#10;&#10;# Conflicts:&#10;#&#9;.idea/deployment.xml&#10;#&#9;.idea/workspace.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Fadhli12/maminasata&#10;&#10;# Conflicts:&#10;#&#9;.idea/deployment.xml&#10;#&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,8 +911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/service/dbConnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>

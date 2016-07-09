@@ -20,7 +20,5 @@ $nama_koridor = $request->nama_koridor;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
-
 $sql_query = "UPDATE koridor SET nama_koridor = '$nama_koridor' WHERE id_koridor = '$id_koridor'";
 $result = $mysqli->query($sql_query);

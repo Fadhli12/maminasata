@@ -20,7 +20,6 @@ $koridor = $request->koridor;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-//error_reporting(0);
 $sql_query = "SELECT * FROM rute WHERE id_koridor = '$koridor' LIMIT 8";
 $sql_query_starend = "SELECT * FROM rute WHERE id_koridor = '$koridor' AND status != 'tengah'";
 $result = $mysqli->query($sql_query);

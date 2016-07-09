@@ -12,96 +12,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-	<!-- header -->
-	<div class="navbar-fixed z-depth-1">
-		<div class="row">
-			<nav>
-				<div class="nav-wrapper cyan darken-2">
-					<a href="#/" class="brand-logo center hide-on-small-and-down">Halte Bus Maminasata</a>
-					<a href="#/" class="hide-on-med-and-up" style="padding-left: 15px">Halte Bus Maminasata</a>
-					<ul class="right">
-						<div class="col s12">
-							<button class="waves-effect waves-light btn red accent-2" modal href="#bus-modal">Tambah Bus</button>
-						</div>
-					</ul>
-					<ul id="nav-mobile" class="left">
-						<div class="col s12 m12 l12 hide-on-small-and-down">
-							<!-- Dropdown Trigger -->
-								<a class='dropdown-button waves-effect waves-light btn cyan accent-4' href='#' data-activates='dropdown1'> Pilih Koridor</a>
-							<!-- Dropdown Structure -->
-							  <ul id='dropdown1' class='dropdown-content'>
-								  <li><a href="#/koridor" modal>+ Koridor</a></li>
-								  <li class="divider"></li>
-								  <li ng-repeat="data in koridor"><a ng-href="#/map/{{data.id_koridor}}" ng-click="getRute(data.id_koridor)">{{data.nama_koridor}}</a></li>
-							  </ul>
-						</div>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	 </div>
-	<!-- end header -->
-	<!-- main container -->
 	<div ui-view></div>
-	<!-- end main container -->
-	<!-- Modal Structure -->
-	<div id="bus-modal" class="modal">
-		<form class="login-form" name="busForm" ng-submit="postBus()">
-		<div class="modal-content">
-			<div class="row">
-				<h5>Pendaftaran Bus</h5>
-				<div class="input-field col s12 m12 l12">
-					<select  name="id_koridor" ng-model="bus.id_koridor" watch material-select required>
-						<option value=""  disabled  selected> Pilih Koridor</option>
-						<option ng-repeat="data in koridor" ng-value="data.id_koridor">{{data.nama_koridor}}</option>
-					</select>
-				</div>
-				<div class="input-field col s12 m12 l12">
-					<i class="zmdi zmdi-bus prefix"></i>
-					<input name="nama" type="text" ng-model="bus.nama" required>
-					<label class="center-align">Nama Bus</label>
-				</div>
-				<div class="input-field col s12 m12 l12">
-					<i class="zmdi zmdi-pin-account prefix"></i>
-					<input name="plat"  type="text" ng-model="bus.plat" required>
-					<label class="center-align">Plat Kendaraan</label>
-				</div>
-			</div>
-			<div class="divider"></div>
-			<div class="row">
-				<h5>Autentikasi Supir Bus</h5>
-				<label>Perhatian! Akun ini digunakan oleh supir bus untuk login di aplikasi maminasata agar bisa mengakses lokasi bus yang didaftarkan.
-					<br>(1 akun supir hanya diperbolehkan mengakses 1 bus terdaftar)</label>
-				<br>
-				<div class="input-field col s12 m6 l6">
-					<i class="zmdi zmdi-account prefix"></i>
-					<input name="usrname" type="text" ng-model="bus.username" required>
-					<label class="center-align">Nama Supir</label>
-				</div>
-				<div class="input-field col s12 m6 l6">
-					<i class="zmdi zmdi-key prefix"></i>
-					<input name="password" type="text" ng-model="bus.password" required>
-					<label class="center-align">Kata Sandi Supir</label>
-				</div>
-			</div>
-		</div>
-		<div class="modal-footer">
-			<button class="btn waves-effect waves-light" type="submit" ng-disabled="busForm.$invalid" name="action">Kirim
-				<i class="material-icons right">send</i>
-			</button>&nbsp;
-			<a href="#!" class=" modal-action modal-close waves-effect waves-gray waves-light btn-flat">Batal</a>
-		</div>
-		</form>
-	</div>
-	<!-- footer -->
-	<!--<footer class="page-footer cyan darken-2">-->
-		<!--<div class="footer-copyright">-->
-			<!--<div class="container center">-->
-			<!--© 2016 Copyright-->
-			<!--</div>-->
-		<!--</div>-->
-	<!--</footer>-->
-	<!-- end footer -->
 	<!--jquery-->
 	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
 	<!--google app-->
@@ -112,6 +23,7 @@
 	<script type="text/javascript" src="lib/angularjs/angular.min.js"></script>
 	<script type="text/javascript" src="lib/angularjs/angular-animate.min.js"></script>
 	<script type="text/javascript" src="lib/angularjs/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/angularjs/angular-cookies.min.js"></script>
 	<script type="text/javascript" src="lib/ui-router/angular-ui-router.min.js"></script>
 	<!-- angular materilaizecss-->
 	<script type="text/javascript" src="lib/angular-materializecss/angular-materialize.js"></script>
@@ -120,10 +32,14 @@
 	<script type="text/javascript" src="public/js/app.mdl.js"></script>
 	<!--angular ctrl-->
 	<script type="text/javascript" src="public/js/global.ctrl.js"></script>
+	<script type="text/javascript" src="public/app/login.ctrl.js"></script>
 	<script type="text/javascript" src="public/app/map.ctrl.js"></script>
 	<script type="text/javascript" src="public/app/koridor.ctrl.js"></script>
 	<script type="text/javascript" src="public/app/koridorEdit.ctrl.js"></script>
 	<script type="text/javascript" src="public/app/halteEdit.ctrl.js"></script>
+	<script type="text/javascript" src="public/app/manajemenBus.ctrl.js"></script>
+
+	<script type="text/javascript" src="public/js/service/userModel.js"></script>
 
 	<!--location picker-->
 	<script src="lib/location-picker/locationpicker.jquery.min.js"></script>

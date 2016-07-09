@@ -1,6 +1,5 @@
 <?php
-$link = mysql_connect("103.55.216.27", "syahbudin_ridwan", "rRyfgkH50b") or die('Cannot connect to the DB');
-mysql_select_db('syahbudin_ridwan', $link) or die('Cannot select the DB');
+include 'dbConnect.php';
 
 //// receiving the post params
 $username = $_POST['username'];

@@ -21,9 +21,15 @@
                         </div>
                     </div>
                     <div class="row">
+                        <select ng-model="pencarian.bus" watch material-select>
+                            <option value="" disabled>Pilih Bus</option>
+                            <option ng-repeat="bus in listBus" value="{{bus.id_bus}}">{{bus.nama}}</option>
+                        </select>
+                    </div>
+                    <div class="row">
                         <select ng-model="pencarian.halte" watch material-select>
                             <option value="" disabled>Pilih Halte Tujuan</option>
-                            <option ng-repeat="koridor in dataKoridor" value="{{koridor.id_halte}}">{{koridor.nama}}</option>
+                            <option ng-repeat="halte in dataHalte" value="{{halte.id_halte}}">{{halte.nama}}</option>
                         </select>
                     </div>
                     <div class="row">
@@ -31,7 +37,7 @@
                         <h6>{{dataBus.nama}}</h6>
 
                         <label>Status</label><br>
-                        <h6>{{dataBus.status_perjalan}}</h6>
+                        <h6>{{dataBus.status_perjalanan}}</h6>
 
                         <label>Kecepatan</label><br>
                         <h6>{{dataBus.kecepatan}} km/jam</h6>

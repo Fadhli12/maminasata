@@ -23,7 +23,5 @@ $id_koridor = $request->id_koridor;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
-
 $sql_query = "INSERT INTO halte SET latitude = '$latitude' , longitude = '$longitude', nama = '$nama' , id_koridor = '$id_koridor'";
 $result = $mysqli->query($sql_query);

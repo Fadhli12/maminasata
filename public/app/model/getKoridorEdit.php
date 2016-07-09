@@ -19,7 +19,6 @@ $id_koridor = $request->id_koridor;
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
 $sql_query_koridor = "SELECT * FROM koridor WHERE id_koridor = '$id_koridor'";
 $result = $mysqli->query($sql_query_koridor);
 if (mysqli_num_rows($result)>0) {

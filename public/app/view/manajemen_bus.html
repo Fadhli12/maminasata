@@ -1,0 +1,141 @@
+<div class="container">
+    <h2>MANAJEMEN BUS</h2>
+    <div class="row">
+        <div class="card-panel">
+
+            <table class="centered highlight">
+                <thead>
+                <tr>
+                    <th data-field="no">NO.</th>
+                    <th data-field="nama">BUS</th>
+                    <th data-field="lokasi">KORIDOR</th>
+                    <th data-field="lokasi">USER</th>
+                    <th data-field="lokasi">STATUS</th>
+                    <th data-field="aksi">AKSI</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="bus in listBus">
+                    <td>{{$index+1}}</td>
+                    <td>{{bus.nama_bus}}</td>
+                    <td>{{bus.nama_koridor}}</td>
+                    <td>{{bus.nama_user}}</td>
+                    <td><span ng-show="bus.status_bus == '1'">Aktif</span><span ng-show="bus.status_bus == '0'">Tidak Aktif</span></td>
+                    <td>
+                        <a class="btn waves-effect waves-light blue" ng-click="editBus($index)">Edit Bus</a>
+                        <a class="btn waves-effect waves-light blue" ng-click="editUser($index)">Edit User</a>
+                        <a class="btn waves-effect waves-light red" ng-click="confirmDelete($index)">Delete</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <h5>Edit Bus</h5>
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="nama">Nama Bus</label>
+                        <input id="nama" type="text" class="validate" placeholder="Nama Bus" ng-model="edit.nama_bus">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="koridor">Koridor</label>
+                        <select class="validate" id="koridor" material-select watch ng-model="edit.id_koridor">
+                            <option>--Pilih Koridor--</option>
+                            <option ng-repeat="koridor in koridor" ng-value="koridor.id_koridor" ng-selected="edit.id_koridor == koridor.id_koridor">{{koridor.nama_koridor}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 right">
+                <div class="row">
+                    <div class="col s12">
+                        <select id="status" material-select watch ng-model="edit.status_bus">
+                            <option value="1" ng-selected="edit.status_bus == '1'">Aktif</option>
+                            <option value="0" ng-selected="edit.status_bus == '0'">Tidak Aktif</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn red waves-effect waves-light" ng-click="saveBus()">SIMPAN</a>
+        <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+    </div>
+</div>
+<div id="edit-user-modal" class="modal">
+    <div class="modal-content">
+        <h5>Edit User Bus</h5>
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" class="validate" placeholder="Username" ng-model="edit2.username" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="nama">Nama</label>
+                        <input id="nama" type="text" class="validate" placeholder="Nama" ng-model="edit2.nama">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="nama">Nomor Telepon</label>
+                        <input id="nama" type="text" class="validate" placeholder="Nama" ng-model="edit2.no_telp">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="password">Kata Kunci</label>
+                        <input id="password" type="text" class="validate" placeholder="Kata Kunci" ng-model="edit2.password">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 right">
+                <div class="row">
+                    <div class="col s12">
+                        <select id="status" material-select watch ng-model="edit2.status">
+                            <option value="true" ng-selected="edit2.status == 'true'">Aktif</option>
+                            <option value="false" ng-selected="edit2.status == 'false'">Tidak Aktif</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn red waves-effect waves-light" ng-click="saveUser()">SIMPAN</a>
+        <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+    </div>
+</div>
+<div id="delete-modal" class="modal">
+    <div class="modal-content">
+        <h5>Hapus Bus</h5>
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12 m12 l12">
+                <i class="fa fa-warning"></i> Yakin Ingin Menghapus Bus!!!
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn red waves-effect waves-light" ng-click="hapusBus(index_bus)">HAPUS</a>
+        <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+    </div>
+</div>

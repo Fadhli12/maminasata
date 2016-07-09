@@ -18,7 +18,7 @@ $id_jalan = $request->id_jalan;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
-error_reporting(0);
+
 $sql_query = "DELETE FROM rute WHERE id_jalan = '$id_jalan'";
 $result = $mysqli->query($sql_query);
 

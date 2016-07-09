@@ -12,20 +12,18 @@ include "connection.php";
  *
  *
  */
+
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
-$id_koridor = $request->id_koridor;
+$id = $request->id;
+$nama = $request->nama;
+$no_telp = $request->no_telp;
+$password = $request->password;
+$status = $request->status;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-$sql_query = "SELECT * FROM halte WHERE id_koridor = '$id_koridor'";
+$sql_query = "UPDATE user_bus SET nama = '$nama', password = '$password',no_telp = '$no_telp', status = '$status' WHERE id = '$id'";
 $result = $mysqli->query($sql_query);
-if (mysqli_num_rows($result)>0){
-	while ($row = mysqli_fetch_array($result)){
-		$data[] = $row;
-	}
-	echo ")]}',\n";
-	echo json_encode($data);
-}
 

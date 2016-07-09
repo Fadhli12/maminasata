@@ -15,12 +15,12 @@ include "connection.php";
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
 $id_koridor = $request->id_koridor;
+$id_bus = $request->id_bus;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
 
-error_reporting(0);
-$sql_query = "SELECT p.*, p.status AS status_perjalan, b.* FROM perjalanan AS p , bus AS b WHERE p.id_bus = b.id_bus AND b.id_koridor = '$id_koridor' LIMIT 1";
+$sql_query = "SELECT p.*, p.status AS status_perjalanan, b.* FROM perjalanan AS p , bus AS b WHERE p.id_bus = b.id_bus AND b.id_koridor = '$id_koridor' AND p.id_bus = '$id_bus' LIMIT 1";
 $result = $mysqli->query($sql_query);
 if (mysqli_num_rows($result) > 0){
     while ($row = mysqli_fetch_array($result)){

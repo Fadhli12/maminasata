@@ -1,14 +1,18 @@
 <?php
-$link = mysql_connect("103.55.216.27", "syahbudin_ridwan", "rRyfgkH50b") or die('Cannot connect to the DB');
-mysql_select_db('syahbudin_ridwan', $link) or die('Cannot select the DB');
+include 'dbConnect.php';
 
 //// receiving the post params
-$id_bus = $_POST['id_bus'];
+$id_user = $_POST['id_user'];
 $speed = $_POST['speed'];
 $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 $status = $_POST['status'];
 $tujuan = '';
+
+$query_bus = mysql_query("SELECT * FROM bus WHERE id_user = '$id_user'");
+$data_bus = mysql_fetch_array($query_bus);
+
+$id_bus = $data_bus['id_bus'];
 
 $query = mysql_query("SELECT * FROM perjalanan WHERE id_bus = '$id_bus' LIMIT 1");
 if (mysql_num_rows($query) == 0){

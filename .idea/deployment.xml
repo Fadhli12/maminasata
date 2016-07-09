@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="maminasata ">
     <serverData>
       <paths name="PT. Maruki Internasional">
         <serverdata>
@@ -10,6 +10,13 @@
         </serverdata>
       </paths>
       <paths name="abu-tiket-server">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="abucorp.com">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -44,31 +51,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="friendstech">
+      <paths name="maminasata ">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="friendstech-dev">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="friendstech2">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="maminasata (1)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -79,14 +65,7 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="sampahta">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="tiketbusku-sisfo-old">
+      <paths name="tiketbus">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

@@ -18,7 +18,7 @@ $id_halte = $request->id_halte;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
-error_reporting(0);
+
 $sql_query = "DELETE FROM halte WHERE id_halte = '$id_halte'";
 $result = $mysqli->query($sql_query);
 

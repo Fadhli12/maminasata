@@ -4,6 +4,8 @@
  * User: Fadhli
  * Date: 11/20/2015
  * Time: 9:01 PM
+ *
+ * Mengambil lokasi dan detail halte menurut koridornya
  */
 include "connection.php";
 

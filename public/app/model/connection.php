@@ -1,5 +1,6 @@
 <?php
 /*
+ *
 * Mysql database class - only one connection alowed
 */
 

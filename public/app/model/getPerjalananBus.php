@@ -4,6 +4,8 @@
  * User: Fadhli
  * Date: 11/20/2015
  * Time: 9:01 PM
+ *
+ * mengambil data perjalanan bus berdasarkan koridor dan busnya
  */
 include "connection.php";
 

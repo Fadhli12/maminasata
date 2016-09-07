@@ -4,6 +4,8 @@
  * User: Fadhli
  * Date: 11/20/2015
  * Time: 9:01 PM
+ *
+ * menghapus koridor berdasarkan id nya
  */
 include "connection.php";
 

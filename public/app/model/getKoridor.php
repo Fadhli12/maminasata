@@ -4,6 +4,8 @@
  * User: Fadhli
  * Date: 11/20/2015
  * Time: 9:01 PM
+ *
+ * mengambil data koridor, rute dan halte untuk di tampilkan di map
  */
 include "connection.php";
 

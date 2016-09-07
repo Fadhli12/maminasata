@@ -4,6 +4,8 @@
  * User: Genesis
  * Date: 21/04/2016
  * Time: 13:30
+ *
+ * Mengambil data bus menurut koridornya
  */
 include "connection.php";
 $postdata = file_get_contents("php://input");

@@ -4,6 +4,8 @@
  * User: Fadhli
  * Date: 11/25/2015
  * Time: 5:29 AM
+ *
+ * fungsi untuk login
  */
 
 include "connection.php";

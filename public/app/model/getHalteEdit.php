@@ -4,6 +4,8 @@
  * User: Fadhli
  * Date: 11/20/2015
  * Time: 9:01 PM
+ *
+ * Mengambil data halte menurut koridornya untuk edit
  */
 include "connection.php";
 

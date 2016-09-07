@@ -3,6 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="74b47f84-9b86-4787-878e-86e63c920df2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/connection.php" afterPath="$PROJECT_DIR$/public/app/model/connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getBusOnly.php" afterPath="$PROJECT_DIR$/public/app/model/getBusOnly.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getHalte.php" afterPath="$PROJECT_DIR$/public/app/model/getHalte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getHalteEdit.php" afterPath="$PROJECT_DIR$/public/app/model/getHalteEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getKoridorEdit.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridorEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getKoridorOnly.php" afterPath="$PROJECT_DIR$/public/app/model/getKoridorOnly.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getListBus.php" afterPath="$PROJECT_DIR$/public/app/model/getListBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getLocationHalte.php" afterPath="$PROJECT_DIR$/public/app/model/getLocationHalte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getPerjalananBus.php" afterPath="$PROJECT_DIR$/public/app/model/getPerjalananBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/getRute.php" afterPath="$PROJECT_DIR$/public/app/model/getRute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusBus.php" afterPath="$PROJECT_DIR$/public/app/model/hapusBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusHalte.php" afterPath="$PROJECT_DIR$/public/app/model/hapusHalte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/hapusKoridor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/hapusRute.php" afterPath="$PROJECT_DIR$/public/app/model/hapusRute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/login.php" afterPath="$PROJECT_DIR$/public/app/model/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postBus.php" afterPath="$PROJECT_DIR$/public/app/model/postBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postHalte.php" afterPath="$PROJECT_DIR$/public/app/model/postHalte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postHalteEdit.php" afterPath="$PROJECT_DIR$/public/app/model/postHalteEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postKoridor.php" afterPath="$PROJECT_DIR$/public/app/model/postKoridor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postKoridorEdit.php" afterPath="$PROJECT_DIR$/public/app/model/postKoridorEdit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postTambahHalte.php" afterPath="$PROJECT_DIR$/public/app/model/postTambahHalte.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/postTambahRute.php" afterPath="$PROJECT_DIR$/public/app/model/postTambahRute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/saveBus.php" afterPath="$PROJECT_DIR$/public/app/model/saveBus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/saveUser.php" afterPath="$PROJECT_DIR$/public/app/model/saveUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" afterPath="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
     </list>
     <ignored path="maminasata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,125 +56,125 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/map.html">
+      <file leaf-file-name="postBus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+                <marker date="1473230583991" expanded="true" signature="542:673" ph="INSERT INTO user_bus... " />
+                <marker date="1473230583991" expanded="true" signature="766:814" ph="SELECT id FR... user_bus" />
+                <marker date="1473230583991" expanded="true" signature="930:1044" ph="INSERT INTO bus... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/connection.php">
+      <file leaf-file-name="postHalte.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postHalte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getBusOnly.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/model/getBusOnly.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding>
-                <marker date="1461558657000" expanded="true" signature="312:362" ph="SELECT * FRO... bus" />
+                <marker date="1473230582900" expanded="true" signature="440:565" ph="INSERT INTO halte... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getHalte.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/getHalte.php">
+      <file leaf-file-name="postHalteEdit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postHalteEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding>
-                <marker date="1461558656000" expanded="true" signature="363:415" ph="SELECT * FRO... halte" />
+                <marker date="1473230583133" expanded="true" signature="492:601" ph="UPDATE halte... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getHalteEdit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/getHalteEdit.php">
+      <file leaf-file-name="postKoridor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postKoridor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
-                <marker date="1461558656000" expanded="true" signature="363:415" ph="SELECT * FRO... halte" />
+                <marker date="1473230583725" expanded="true" signature="420:474" ph="INSERT INTO koridor... " />
+                <marker date="1473230583725" expanded="true" signature="548:611" ph="SELECT id_ko... koridor" />
+                <marker date="1473230583725" expanded="true" signature="925:1072" ph="INSERT INTO rute... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getKoridor.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/getKoridor.php">
+      <file leaf-file-name="postKoridorEdit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postKoridorEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding>
-                <marker date="1461558656000" expanded="true" signature="357:387" ph="SELECT DISTI... koridor" />
-                <marker date="1461558656000" expanded="true" signature="523:579" ph="SELECT * FRO... rute" />
-                <marker date="1461558656000" expanded="true" signature="773:830" ph="SELECT * FRO... halte" />
+                <marker date="1473230583678" expanded="true" signature="494:602" ph="UPDATE rute " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getKoridorEdit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/getKoridorEdit.php">
+      <file leaf-file-name="postTambahHalte.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postTambahHalte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
-                <marker date="1461558656000" expanded="true" signature="371:425" ph="SELECT * FRO... koridor" />
-                <marker date="1461558656000" expanded="true" signature="605:656" ph="SELECT * FRO... rute" />
+                <marker date="1473230582450" expanded="true" signature="476:592" ph="INSERT INTO halte... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getListBus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/model/getListBus.php">
+      <file leaf-file-name="saveBus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/saveBus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="168" selection-start-line="12" selection-start-column="168" selection-end-line="12" selection-end-column="168" />
+            <state relative-caret-position="119">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding>
-                <marker date="1461558656000" expanded="true" signature="195:382" ph="SELECT b.*, bus" />
+                <marker date="1473230583945" expanded="true" signature="476:582" ph="UPDATE bus S... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/app.html">
+      <file leaf-file-name="saveUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/saveUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-              <folding />
+            <state relative-caret-position="119">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <marker date="1473230582665" expanded="true" signature="488:604" ph="UPDATE user_... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manajemen_bus.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/view/manajemen_bus.html">
+      <file leaf-file-name="simpanKoridorEdit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="105" column="50" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="50" />
+            <state relative-caret-position="119">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <marker date="1473230583192" expanded="true" signature="448:530" ph="UPDATE korid... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postTambahRute.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/model/postTambahRute.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <marker date="1473230582531" expanded="true" signature="475:590" ph="INSERT INTO rute... " />
               </folding>
             </state>
           </provider>
@@ -186,7 +212,16 @@
         <option value="$PROJECT_DIR$/public/app/model/service/androidGetHalte.php" />
         <option value="$PROJECT_DIR$/public/app/model/service/androidGetData.php" />
         <option value="$PROJECT_DIR$/public/app/model/service/androidGetBus.php" />
-        <option value="$PROJECT_DIR$/public/app/model/login.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
+        <option value="$PROJECT_DIR$/public/app/view/koridor.html" />
+        <option value="$PROJECT_DIR$/public/js/service/userModel.js" />
+        <option value="$PROJECT_DIR$/public/app/manajemenBus.ctrl.js" />
+        <option value="$PROJECT_DIR$/public/app/view/manajemen_bus.html" />
+        <option value="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
+        <option value="$PROJECT_DIR$/public/app/model/service/androidGetTrip.php" />
+        <option value="$PROJECT_DIR$/public/app/view/app.html" />
+        <option value="$PROJECT_DIR$/public/app/view/map.html" />
+        <option value="$PROJECT_DIR$/public/app/model/connection.php" />
         <option value="$PROJECT_DIR$/public/app/model/getBusOnly.php" />
         <option value="$PROJECT_DIR$/public/app/model/getHalte.php" />
         <option value="$PROJECT_DIR$/public/app/model/getHalteEdit.php" />
@@ -201,6 +236,7 @@
         <option value="$PROJECT_DIR$/public/app/model/hapusHalte.php" />
         <option value="$PROJECT_DIR$/public/app/model/hapusKoridor.php" />
         <option value="$PROJECT_DIR$/public/app/model/hapusRute.php" />
+        <option value="$PROJECT_DIR$/public/app/model/login.php" />
         <option value="$PROJECT_DIR$/public/app/model/postHalte.php" />
         <option value="$PROJECT_DIR$/public/app/model/postHalteEdit.php" />
         <option value="$PROJECT_DIR$/public/app/model/postKoridor.php" />
@@ -208,19 +244,9 @@
         <option value="$PROJECT_DIR$/public/app/model/postTambahHalte.php" />
         <option value="$PROJECT_DIR$/public/app/model/postTambahRute.php" />
         <option value="$PROJECT_DIR$/public/app/model/saveBus.php" />
-        <option value="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
-        <option value="$PROJECT_DIR$/public/app/model/connection.php" />
-        <option value="$PROJECT_DIR$/public/app/model/service/androidGetPerjalanan.php" />
-        <option value="$PROJECT_DIR$/public/app/view/koridor.html" />
-        <option value="$PROJECT_DIR$/public/js/service/userModel.js" />
         <option value="$PROJECT_DIR$/public/app/model/postBus.php" />
-        <option value="$PROJECT_DIR$/public/app/manajemenBus.ctrl.js" />
         <option value="$PROJECT_DIR$/public/app/model/saveUser.php" />
-        <option value="$PROJECT_DIR$/public/app/view/manajemen_bus.html" />
-        <option value="$PROJECT_DIR$/public/app/model/service/dbConnect.php" />
-        <option value="$PROJECT_DIR$/public/app/model/service/androidGetTrip.php" />
-        <option value="$PROJECT_DIR$/public/app/view/app.html" />
-        <option value="$PROJECT_DIR$/public/app/view/map.html" />
+        <option value="$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php" />
       </list>
     </option>
   </component>
@@ -263,6 +289,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="maminasata">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="maminasata">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="model">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="service">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="maminasata">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,68 +447,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="maminasata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="maminasata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="public">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="model">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="service">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="maminasata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,7 +454,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../persuratan" />
-    <property name="SearchEverywhereHistoryKey" value="plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
+    <property name="SearchEverywhereHistoryKey" value="koridoredi&#9;FILE&#9;file://D:/XAMPP/htdocs/project/maminasata/public/app/koridorEdit.ctrl.js&#10;app.js&#9;FILE&#9;file://D:/XAMPP/htdocs/project/maminasata/public/js/app.mdl.js&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -545,7 +571,9 @@
       <workItem from="1468051292357" duration="819000" />
       <workItem from="1468085121600" duration="5788000" />
       <workItem from="1472437790998" duration="1572000" />
-      <workItem from="1472537680587" duration="8000" />
+      <workItem from="1472537680587" duration="79000" />
+      <workItem from="1472725887260" duration="1075000" />
+      <workItem from="1473229781850" duration="799000" />
     </task>
     <task id="LOCAL-00001" summary="fix sedikit eror">
       <created>1454555735377</created>
@@ -603,22 +631,29 @@
       <option name="project" value="LOCAL" />
       <updated>1468096484975</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/Fadhli12/maminasata&#10;&#10;# Conflicts:&#10;#&#9;.idea/deployment.xml&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1472537695874</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1472537695874</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110621000" />
+    <option name="totallyTimeSpent" value="112566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32388973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -667,104 +702,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/model/getRute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/hapusBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/hapusHalte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/hapusKoridor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/hapusRute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postHalte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postHalteEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postKoridor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postKoridorEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postTambahHalte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postTambahRute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/service/androidBusLogout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/service/androidGetData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -828,25 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/koridorEdit.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,27 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/saveBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/postBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getLocationHalte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/manajemenBus.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -899,24 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/saveUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/service/dbConnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getPerjalananBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -959,9 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="105" column="50" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,73 +871,286 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getHalte.php">
+    <entry file="file://$PROJECT_DIR$/public/js/app.mdl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1461558656000" expanded="true" signature="363:415" ph="SELECT * FRO... halte" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getHalteEdit.php">
+    <entry file="file://$PROJECT_DIR$/public/app/koridorEdit.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461558656000" expanded="true" signature="363:415" ph="SELECT * FRO... halte" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <marker date="1461558656000" expanded="true" signature="357:387" ph="SELECT DISTI... koridor" />
-            <marker date="1461558656000" expanded="true" signature="523:579" ph="SELECT * FRO... rute" />
-            <marker date="1461558656000" expanded="true" signature="773:830" ph="SELECT * FRO... halte" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridorEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461558656000" expanded="true" signature="371:425" ph="SELECT * FRO... koridor" />
-            <marker date="1461558656000" expanded="true" signature="605:656" ph="SELECT * FRO... rute" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/getListBus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="168" selection-start-line="12" selection-start-column="168" selection-end-line="12" selection-end-column="168" />
-          <folding>
-            <marker date="1461558656000" expanded="true" signature="195:382" ph="SELECT b.*, bus" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/model/getBusOnly.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding>
-            <marker date="1461558657000" expanded="true" signature="312:362" ph="SELECT * FRO... bus" />
+            <marker date="1473230583765" expanded="true" signature="356:406" ph="SELECT * FRO... bus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <marker date="1473230582600" expanded="true" signature="422:474" ph="SELECT * FRO... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getHalteEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding>
+            <marker date="1473230583583" expanded="true" signature="420:472" ph="SELECT * FRO... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding>
+            <marker date="1473230583022" expanded="true" signature="428:458" ph="SELECT DISTI... koridor" />
+            <marker date="1473230583022" expanded="true" signature="594:650" ph="SELECT * FRO... rute" />
+            <marker date="1473230583022" expanded="true" signature="844:901" ph="SELECT * FRO... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridorEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <marker date="1473230582741" expanded="true" signature="420:474" ph="SELECT * FRO... koridor" />
+            <marker date="1473230582741" expanded="true" signature="654:705" ph="SELECT * FRO... rute" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getKoridorOnly.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <marker date="1473230583513" expanded="true" signature="388:418" ph="SELECT DISTI... koridor" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getListBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <marker date="1473230583442" expanded="true" signature="227:414" ph="SELECT b.*, bus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getLocationHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <marker date="1473230582849" expanded="true" signature="391:457" ph="SELECT latit... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getPerjalananBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <folding>
+            <marker date="1473230583328" expanded="true" signature="458:628" ph="SELECT p.*, perjalanan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/getRute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <marker date="1473230583616" expanded="true" signature="407:463" ph="SELECT * FRO... rute" />
+            <marker date="1473230583616" expanded="true" signature="488:559" ph="SELECT * FRO... rute" />
+            <marker date="1473230583616" expanded="true" signature="1182:1231" ph="SELECT * FRO... halte" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/hapusBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <marker date="1473230583830" expanded="true" signature="424:466" ph="DELETE FROM " />
+            <marker date="1473230583830" expanded="true" signature="486:526" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/hapusHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <marker date="1473230583392" expanded="true" signature="405:451" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/hapusKoridor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <marker date="1473230583268" expanded="true" signature="395:439" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/hapusRute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1473230582961" expanded="true" signature="399:444" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <marker date="1473230583893" expanded="true" signature="413:487" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postHalteEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <marker date="1473230583133" expanded="true" signature="492:601" ph="UPDATE halte... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postKoridor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <marker date="1473230583725" expanded="true" signature="420:474" ph="INSERT INTO koridor... " />
+            <marker date="1473230583725" expanded="true" signature="548:611" ph="SELECT id_ko... koridor" />
+            <marker date="1473230583725" expanded="true" signature="925:1072" ph="INSERT INTO rute... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postKoridorEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <marker date="1473230583678" expanded="true" signature="494:602" ph="UPDATE rute " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <marker date="1473230582900" expanded="true" signature="440:565" ph="INSERT INTO halte... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postTambahHalte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <marker date="1473230582450" expanded="true" signature="476:592" ph="INSERT INTO halte... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postTambahRute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1473230582531" expanded="true" signature="475:590" ph="INSERT INTO rute... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/postBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <marker date="1473230583991" expanded="true" signature="542:673" ph="INSERT INTO user_bus... " />
+            <marker date="1473230583991" expanded="true" signature="766:814" ph="SELECT id FR... user_bus" />
+            <marker date="1473230583991" expanded="true" signature="930:1044" ph="INSERT INTO bus... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/saveBus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <marker date="1473230583945" expanded="true" signature="476:582" ph="UPDATE bus S... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/saveUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <marker date="1473230582665" expanded="true" signature="488:604" ph="UPDATE user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/simpanKoridorEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <marker date="1473230583192" expanded="true" signature="448:530" ph="UPDATE korid... " />
           </folding>
         </state>
       </provider>

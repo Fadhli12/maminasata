@@ -1,5 +1,4 @@
 /**
- * Created by Genesis on 03/02/2016.
  */
 myApp.controller('loginCtrl', function ($scope,userModel) {
     $scope.login={};

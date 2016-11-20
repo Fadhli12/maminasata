@@ -15,12 +15,11 @@ include "connection.php";
  */
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
-$id_bus = $request->id_bus;
 $id_user = $request->id_user;
 
 $db = Database::getInstance();
 $mysqli = $db->getConnection();
-
-$mysqli->query("DELETE FROM user_bus WHERE id = '$id_user'");
-$mysqli->query("DELETE FROM bus WHERE id_bus = '$id_bus'");
+if ($id_user != 1 || $id_user != '1') {
+    $mysqli->query("DELETE FROM user WHERE id_user = '$id_user'");
+}
 

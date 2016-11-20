@@ -1,17 +1,96 @@
-<div class="row">
-    <div class="col push-s3 s6">
-        <form name="formLogin" ng-submit="doLogin(formLogin.$valid)">
-            <div class="col s12" input-field>
-                <input type="text" ng-model="login.username" name="username" required>
-                <label>Username</label>
+<!--<div class="row">-->
+    <!--<div class="col push-s3 s6">-->
+        <!--<form name="formLogin" ng-submit="doLogin(formLogin.$valid)">-->
+            <!--<div class="col s12" input-field>-->
+                <!--<input type="text" ng-model="login.username" name="username" required>-->
+                <!--<label>Username</label>-->
+            <!--</div>-->
+            <!--<div class="col s12" input-field>-->
+                <!--<input type="password" ng-model="login.password" name="password" required>-->
+                <!--<label>Password</label>-->
+            <!--</div>-->
+            <!--<div class="col s12" input-field>-->
+                <!--<button type="submit" nd-disabled="formLogin.$invalid">Login</button>-->
+            <!--</div>-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->
+
+ <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .input-field input[type=date]:focus + label,
+        .input-field input[type=text]:focus + label,
+        .input-field input[type=email]:focus + label,
+        .input-field input[type=password]:focus + label {
+            color: #e91e63;
+        }
+
+        .input-field input[type=date]:focus,
+        .input-field input[type=text]:focus,
+        .input-field input[type=email]:focus,
+        .input-field input[type=password]:focus {
+            border-bottom: 2px solid #e91e63;
+            box-shadow: none;
+        }
+    </style>
+
+<div class="section"></div>
+<main>
+    <center>
+        <img class="responsive-img" style="width: 120px;" src="https://scontent-sin6-1.xx.fbcdn.net/v/t34.0-12/15129898_10202246261474206_640363262_n.png?oh=5ad7d633f713e2d64e874b44672b44bf&oe=58323D5C" />
+        <!--<div class="section"></div>-->
+
+        <h5 class="indigo-text">Selamat Datang di Maminasata</h5>
+        <div class="section"></div>
+
+        <div class="container">
+            <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+                <form  name="formLogin" ng-submit="doLogin(formLogin.$valid)" class="col s12" method="post">
+                    <div class='row'>
+                        <div class='col s12'>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <input  type="text" ng-model="login.username" name="username" required class='validate' id='username' />
+                            <label for='username' style="text-align: left">Nama Pengguna</label>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <input type="password" ng-model="login.password" name="password" required class='validate' id='password' />
+                            <label for='password' style="text-align: left">Kata Sandi</label>
+                        </div>
+                        <label style='float: right;'>
+                            <a class='grey-text text-lighten-4'><b>Forgot Password?</b></a>
+                        </label>
+                    </div>
+
+                    <br />
+                    <center>
+                        <div class='row'>
+                            <button type='submit' name='btn_login' nd-disabled="formLogin.$invalid" class='col s12 btn btn-large waves-effect indigo'>MASUK</button>
+                        </div>
+                    </center>
+                </form>
             </div>
-            <div class="col s12" input-field>
-                <input type="password" ng-model="login.password" name="password" required>
-                <label>Password</label>
-            </div>
-            <div class="col s12" input-field>
-                <button type="submit" nd-disabled="formLogin.$invalid">Login</button>
-            </div>
-        </form>
-    </div>
-</div>
+        </div>
+        <!--<a href="#!">Create account</a>-->
+    </center>
+</main>

@@ -1,5 +1,4 @@
 /**
- * Created by Genesis on 03/02/2016.
  */
 myApp.controller('manajemenBusCtrl',function($scope,$http,$stateParams){
     $http.get('public/app/model/getKoridorOnly.php')

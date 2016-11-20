@@ -1,9 +1,14 @@
 <div class="container">
-    <h2>MANAJEMEN BUS</h2>
     <div class="row">
-        <div class="card-panel">
+        <div class="col s12">
+            <h5>MANAJEMEN BUS</h5>
+            <h6>Gunakan manajemen bus untuk menambah, mengubah atau menghapus bus.</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-panel z-depth-0 grey lighten-4">
 
-            <table class="centered highlight">
+            <table class="centered bordered">
                 <thead>
                 <tr>
                     <th data-field="no">NO.</th>
@@ -22,9 +27,9 @@
                     <td>{{bus.nama_user}}</td>
                     <td><span ng-show="bus.status_bus == '1'">Aktif</span><span ng-show="bus.status_bus == '0'">Tidak Aktif</span></td>
                     <td>
-                        <a class="btn waves-effect waves-light blue" ng-click="editBus($index)">Edit Bus</a>
-                        <a class="btn waves-effect waves-light blue" ng-click="editUser($index)">Edit User</a>
-                        <a class="btn waves-effect waves-light red" ng-click="confirmDelete($index)">Delete</a>
+                        <a class="btn waves-effect waves-light white black-text" ng-click="editBus($index)"><span class="fa fa-edit"></span></a>
+                        <a class="btn waves-effect waves-light white black-text" ng-click="editUser($index)"><span class="fa fa-user-times"></span></a>
+                        <a class="btn waves-effect waves-light red" ng-click="confirmDelete($index)"><span class="fa fa-trash-o"></span></a>
                     </td>
                 </tr>
                 </tbody>

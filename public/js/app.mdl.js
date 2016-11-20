@@ -1,5 +1,4 @@
 /**
- * Created by virah on 17-Nov-15.
  */
 
 var myApp = angular.module('myApp',['ui.router','ngAnimate','ngRoute','ui.materialize','ngCookies']);
@@ -45,6 +44,11 @@ myApp.config(function($stateProvider,$urlRouterProvider,$locationProvider,$route
                url:'/manajemen-bus',
                templateUrl:'public/app/view/manajemen_bus.html',
                controller:'manajemenBusCtrl'
+           })
+            .state('app.pengaturan',{
+               url:'/pengaturan',
+               templateUrl:'public/app/view/pengaturan.html',
+               controller:'pengaturanCtrl'
            })
    ;
     $urlRouterProvider.otherwise('login');

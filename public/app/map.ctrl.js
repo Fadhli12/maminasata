@@ -1,13 +1,11 @@
 /**
- * Created by Genesis on 03/02/2016.
  */
-myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $state) {
+myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $cookies) {
     var myOptions = {
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     //app api
-
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
     // init directions service
     var dirService = new google.maps.DirectionsService();

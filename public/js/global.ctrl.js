@@ -1,9 +1,9 @@
 /**
- * Created by Genesis on 03/02/2016.
  */
-myApp.controller('globalCtrl',function($scope,$http){
+myApp.controller('globalCtrl',function($scope,$http,$cookies,userModel){
     $scope.koridor = [];
     $scope.bus = {};
+    $scope.nama = $cookies.get('nama');
     $http.get('public/app/model/getKoridorOnly.php')
         .then(function(res){
             $scope.koridor = res.data
@@ -20,5 +20,8 @@ myApp.controller('globalCtrl',function($scope,$http){
                 console.log(res);
             })
     };
+    $scope.logOut = function(){
+        userModel.doLogout();
+    }
     
 });

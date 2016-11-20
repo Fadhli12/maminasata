@@ -1,7 +1,6 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Fadhli
  * Date: 11/25/2015
  * Time: 5:29 AM
  *

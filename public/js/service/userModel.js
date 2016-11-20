@@ -1,5 +1,4 @@
 /**
- * Created by Fadhli on 11/25/2015.
  */
 myApp.factory('userModel', function ($http,$location,$cookies,$log) {
     var userModel = {};
@@ -24,6 +23,7 @@ myApp.factory('userModel', function ($http,$location,$cookies,$log) {
     userModel.doLogout = function(){
         $cookies.remove('id_user');
         $cookies.remove('nama');
+        $location.path('/login');
     }
     userModel.getAuthStatus = function(){
         var status = $cookies.get('id_user');

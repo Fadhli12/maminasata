@@ -1,5 +1,4 @@
 /**
- * Created by Genesis on 03/02/2016.
  */
 myApp.controller('halteEditCtrl',function($scope,$http,$stateParams){
     $scope.list_halte = [];

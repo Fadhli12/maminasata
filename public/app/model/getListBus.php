@@ -1,7 +1,6 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Genesis
  * Date: 21/04/2016
  * Time: 13:30
  *

@@ -5,18 +5,10 @@
             <div class="nav-wrapper cyan darken-2">
                 <a href="#/app/map/3" class="brand-logo center hide-on-small-and-down">Halte Bus Maminasata</a>
                 <a href="#/app/map/3" class="hide-on-med-and-up" style="padding-left: 15px">Halte Bus Maminasata</a>
-                <ul class="right">
-                    <div class="col s4">
-                        <a href="#/app/manajemen-bus" class="waves-effect waves-light btn red accent-2"><i class="fa fa-bus" style="line-height: 0;"></i></a>
-                    </div>
-                    <div class="col s8">
-                        <button class="waves-effect waves-light btn red accent-2" modal href="#bus-modal">Tambah Bus</button>
-                    </div>
-                </ul>
                 <ul id="nav-mobile" class="left">
                     <div class="col s12 m12 l12 hide-on-small-and-down">
                         <!-- Dropdown Trigger -->
-                        <a class='dropdown-button waves-effect waves-light btn cyan accent-4' data-activates='dropdown1' dropdown> Pilih Koridor</a>
+                        <a class='col s12 dropdown-button waves-effect waves-light btn cyan accent-4' data-activates='dropdown1' dropdown style="margin-top: 10%;"> Pilih Koridor</a>
                         <!-- Dropdown Structure -->
                         <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="#/app/koridor" modal>+ Koridor</a></li>
@@ -25,6 +17,30 @@
                         </ul>
                     </div>
                 </ul>
+                <ul class="right">
+
+                    <div class="col s12">
+                        <!-- Dropdown Trigger -->
+                        <a class='col s12 dropdown-button waves-effect waves-light btn red lighten-1' data-activates='profil' dropdown style="margin-top: 10%; width: 150px"><span class="fa fa-user-circle-o"></span> {{nama}}</a>
+                        <!-- Dropdown Structure -->
+                        <ul id='profil' class='dropdown-content'>
+                            <li>
+                                <a href="#/app/manajemen-bus"><i class="fa fa-bus" style="line-height: 0;"></i> Semua Bus</a>
+                            </li>
+                            <li>
+                                <a modal href="#bus-modal"><i class="fa fa-plus" style="line-height: 0;"></i> Tambah Bus</a>
+                            </li>
+                            <li>
+                                <a href="#/app/pengaturan"><i class="fa fa-gear" style="line-height: 0;"></i> Pengaturan</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a ng-click="logOut()"><span class="fa fa-sign-out"></span> Keluar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
             </div>
         </nav>
     </div>

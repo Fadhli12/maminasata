@@ -1,0 +1,122 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h5>MANAJEMEN PENGGUNA</h5>
+            <h6>Gunakan manajemen pengguna untuk menambah, mengubah atau menghapus pengguna akun anda.</h6>
+            <a class="btn waves-effect waves-light blue" ng-click="tambahUser()">Tambah User</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-panel z-depth-0 grey lighten-4">
+
+            <table class="centered highlight">
+                <thead>
+                <tr>
+                    <th data-field="no">NO.</th>
+                    <th data-field="nama">USERNAME</th>
+                    <th data-field="lokasi">PASSWORD</th>
+                    <th data-field="lokasi">NAMA</th>
+                    <th data-field="aksi">AKSI</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="user in user">
+                    <td>{{$index+1}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.password}}</td>
+                    <td>{{user.nama}}</td>
+
+                    <td>
+                        <a class="btn waves-effect waves-light blue" ng-click="editUser($index)">Edit User</a>
+                        <a class="btn waves-effect waves-light red" ng-hide="{{user.id_user == 1}}" ng-click="confirmDelete($index)">Delete</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <h5>Edit Bus</h5>
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="nama">Nama User</label>
+                        <input id="nama" type="text" class="validate" placeholder="Nama Bus" ng-model="edit.nama">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" class="validate" placeholder="Username" ng-model="edit.username">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" class="validate" placeholder="Password" ng-model="edit.password">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn red waves-effect waves-light" ng-click="saveUser()">SIMPAN</a>
+        <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+    </div>
+</div>
+<div id="tambah-user-modal" class="modal">
+    <div class="modal-content">
+        <h5>Tambah User</h5>
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="nama">Nama</label>
+                        <input id="nama" type="text" class="validate" placeholder="Nama" ng-model="add.nama">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" class="validate" placeholder="Username" ng-model="add.username">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" class="validate" placeholder="Password" ng-model="add.password">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn red waves-effect waves-light" ng-click="saveUser2()">SIMPAN</a>
+        <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+    </div>
+</div>
+<div id="delete-modal" class="modal">
+    <div class="modal-content">
+        <h5>Hapus User</h5>
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12 m12 l12">
+                <i class="fa fa-warning"></i> Yakin Ingin Menghapus User!!!
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn red waves-effect waves-light" ng-click="hapusUser()">HAPUS</a>
+        <a class="modal-action modal-close btn-flat waves-effect waves-light">BATAL</a>
+    </div>
+</div>

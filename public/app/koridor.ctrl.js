@@ -16,12 +16,12 @@ myApp.controller('koridorCtrl',function($scope,$http){
     getKoridor();
 
     $scope.tambahRute = function(){
-        var data = new Object();
-        data.lokasi = $('#lokasi-kordinat').val();
+        var data = {};
+        data.lokasi = $('#lokasi').val();
         data.latitude = $('#latitude').val();
         data.longitude = $('#longitude').val();
         $scope.rute.push(data);
-    }
+    };
 
     $scope.tambahHalte = function(){
         var data = new Object();

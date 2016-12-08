@@ -51,12 +51,14 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $c
 
     function setHalte(halte) {
         // console.log('set halte');
+        var iconBase = 'assets/img/icon/';
         for (i = 0; i < halte.length; i++) {
             var marker = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(halte[i].latitude, halte[i].longitude),
                 title: halte[i].nama,
-                animation: google.maps.Animation.DROP
+                animation: google.maps.Animation.DROP,
+                icon: iconBase + 'halte-icon.png'
             });
             marker.content = '' +
                 '<div id="content">' +
@@ -94,7 +96,7 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $c
                         $scope.dataBus = res.data;
                         var latitude = res.data.latitude;
                         var longitude = res.data.longitude;
-                        var title = res.data.nama;
+                        var title = 'Nama Bus :'+res.data.nama+', Kecepatan : '+res.data.kecepatan+' Km/jam';
 
                         var bus = {latitude: latitude, longitude: longitude};
                         var iconBase = 'assets/img/icon/';
@@ -102,8 +104,14 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $c
                             map: map,
                             position: new google.maps.LatLng(bus.latitude, bus.longitude),
                             title: title,
-                            icon: iconBase + 'icon-bus.png'
+                            icon: iconBase + 'icon-bus.png',
+                            zIndex : 99,
+                            labelContent: title,
+                            labelAnchor: new google.maps.Point(30, -2),
+                            labelClass: "labels",
+                            labelStyle: { opacity: 0.80 }
                         });
+
 
                         busMarkers.push(marker);
                         for (m = 1; m <= busMarkers.length; m++) {
@@ -169,7 +177,7 @@ myApp.controller('mapCtrl', function ($scope, $http, $interval, $stateParams, $c
                         if (status == google.maps.DirectionsStatus.OK) {
 
                             if ($scope.dataBus.status_perjalanan != 'berhenti'){
-                                $scope.eta = parseInt(response.routes[0].legs[0].distance.value)/ (parseInt($scope.dataBus.kecepatan)*1000/3600) ;
+                                $scope.eta = parseInt(response.routes[0].legs[0].distance.value)/ (parseInt($scope.dataBus.kecepatan_rata_rata)*1000/3600) ;
                                 if ($scope.eta > 3600){
                                     $scope.etaJam = Math.floor($scope.eta/3600);
                                     $scope.eta = $scope.eta - ($scope.eatJam * 3600);

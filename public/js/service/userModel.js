@@ -6,15 +6,16 @@ myApp.factory('userModel', function ($http,$location,$cookies,$log) {
     userModel.doLogin = function (loginForm) {
         return $http.post('public/app/model/login.php', {username: loginForm.username, password: loginForm.password})
             .then(function (response) {
-                console.log(response);
                 if (response.data.status_login == '0') {
                     alert(response.data.message);
                 }
                 if (response.data.status_login == '1') {
                     statusUser = response.data.status_user;
                     $location.path('/app/map/3');
-                    $cookies.put('id_user',response.data.id_user);
-                    $cookies.put('nama',response.data.nama)
+                    var expireTime = new Date();
+                    expireTime.setMinutes(expireTime.getMinutes() + 20);
+                    $cookies.put('id_user',response.data.id_user,{expires : expireTime});
+                    $cookies.put('nama',response.data.nama,{expires : expireTime});
                 }
             }, function (response) {
                 $log.info(response);

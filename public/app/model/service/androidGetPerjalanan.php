@@ -16,14 +16,16 @@ $id_bus = $data_bus['id_bus'];
 
 $query = mysql_query("SELECT * FROM perjalanan WHERE id_bus = '$id_bus' LIMIT 1");
 if (mysql_num_rows($query) == 0){
-    $query_insert = "INSERT INTO perjalanan SET id_bus = '$id_bus', kecepatan = '$speed', latitude = '$latitude', longitude = '$longitude' , tujuan = '$tujuan' , status = '$status'";
+    $query_insert = "INSERT INTO perjalanan SET id_bus = '$id_bus', kecepatan = '$speed', kecepatan_rata_rata = '$speed', latitude = '$latitude', longitude = '$longitude' , tujuan = '$tujuan' , status = '$status'";
     if (mysql_query($query_insert)){
         echo "berhasil menambah perjalanan";
     } else {
         echo "error menambah data";
     }
 } else {
-    $query_update = "UPDATE perjalanan SET kecepatan = '$speed', latitude = '$latitude', longitude = '$longitude', status = '$status', tujuan = '$tujuan' WHERE id_bus = '$id_bus'";
+    $data_perjalanan = mysql_fetch_array($query);
+    $kecepatan_rata_rata = ($data_perjalanan['kecepatan'] + $speed) / 2;
+    $query_update = "UPDATE perjalanan SET kecepatan = '$speed', kecepatan_rata_rata = '$kecepatan_rata_rata' , latitude = '$latitude', longitude = '$longitude', status = '$status', tujuan = '$tujuan' WHERE id_bus = '$id_bus'";
     if (mysql_query($query_update)){
         echo "berhasil mengaupdate perjalanan";
     } else {
